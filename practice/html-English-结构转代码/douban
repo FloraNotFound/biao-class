@@ -1,0 +1,63 @@
+<div class="row-nav-global">
+    <div class="col-left">
+        <div class="link"></div> <!-- *n-->
+    </div>
+    <div class="col-right">
+        <div class="link"></div> <!-- *n -->
+    </div>
+</div>
+<div class="row-main">
+    <div class="row-nav-page">
+        <div class="col-logo"> </div>
+        <div class="col-link-group">
+            <div class="link"></div> <!-- *n -->
+        </div>
+        <div class="col-seach"></div>
+        </div>
+    <div class="row-content"></div>
+        <div class="row-title"></div>
+        <div class="row-main-content">
+            <div class="col-talk">
+                <div class="row-item"> <!--*n-->
+                    <div class="col">
+                        <div class="like"></div>
+                    </div>
+                    <div class="col">
+                        <div class="row-title"></div>
+                        <div class="row-content">
+                            <div class="col-picture"></div>
+                            <div class="col-word"></div>
+                        </div>
+                        <div class="other"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-group-talk">
+                <div class="row-title">
+                    <div class="title"></div>
+                </div>
+                <div class="row-content">
+                    <div class="row-item">
+                        <div class="col-left">
+                            <div class="picture"></div>
+                        </div>
+                        <div class="col-right">
+                            <div class="row-title"></div>
+                            <div class="row-information"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row-foot">
+    <div class="col-left">
+        <div class="word"></div>
+    </div>
+    <div class="col-right">
+        <div class="link-group">
+            <div class="link"></div>
+        </div>
+    </div>
+</div>
