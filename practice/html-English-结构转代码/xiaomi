@@ -1,0 +1,133 @@
+<div class="row-begin">
+    <div class="row-global-nav">
+        <div class="col-left">
+            <div class="col-link"></div> 
+        <div class="col-right">
+            <div class="col-link"></div>
+        </div>
+        </div>
+    </div>
+    <div class="row-page-nav">
+        <div class="col-logo"></div>
+        <div class="col-linkgroup">
+            <div class="col-link"></div><!--*n-->
+        </div>
+        <div class="col-seach-bar"></div>
+    </div>
+    <div class="row-kind">
+        <div class="col-linkgroup">
+            <div class="row-link"></div>    <!--*n-->
+        </div>
+        <div class="col-carousel"></div>
+    </div>
+    <div class="row-faster">
+        <div class="col-choice">
+            <div class="row*2"></div>
+                <div class="col*3">
+                    <div class="row-picture"></div>
+                    <div class="row-word"></div>
+                </div>
+        </div>
+        <div class="col-card-group">
+            <div class="col"><!--*3-->
+                <div class="picture"></div>
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="row-main">
+    <div class="row-fastbuy">
+        <div class="row-title">
+            <div class="col-left">
+                <div class="word"></div>
+            </div>
+            <div class="col-right">
+                <div class="button"></div>
+            </div>
+        </div>
+        <div class="row-card-group">
+            <div class="col*4">
+                <div class="row-picture"></div>
+                <div class="row-big"></div>
+                <div class="row-small"></div>
+                <div class="row-price"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row-phone">
+        <div class="row-big-picture">
+            <div class="row-big-title"></div>
+            <div class="row-small-title"></div>
+        </div>
+        <div class="row-phone-1">
+            <div class="row-phone-title">
+                <div class="col-words"></div>
+                <div class="col-link"></div>
+            </div>
+            <div class="row-phone-2">
+                <div class="col-big-picture">
+                    <div class="row-big"></div>
+                    <div class="row-small"></div>
+                    <div class="row-price"></div>
+                </div>
+                <div class="col-phone-content">
+                    <div class="row*2">
+                        <div class="col*4">
+                            <div class="row-picture"></div>
+                            <div class="row-big"></div>
+                            <div class="row-small"></div>
+                            <div class="row-price"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-hot-thing">
+        <div class="row-title-thing"></div>
+        <div class="row-card-group">
+            <div class="col*4">
+                <div class="row-picture"></div>
+                <div class="row-evaluate"></div>
+                <div class="row-form"></div>
+                <div class="row-price"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row-contect">
+        <div class="col*4">
+            <div class="row-big"></div>
+            <div class="row-name"></div>
+            <div class="row-word"></div>
+            <div class="row-price"></div>
+            <div class="row-picture"></div>
+        </div>
+    </div>
+</div>
+<div class="row-foot">
+    <div class="row-after-sale">
+        <div class="col-link*n"></div>
+    </div>
+    <div class="row-help">
+        <div class="col-linkgroup">
+            <div class="col*6">
+                <div class="row-link*4"></div>
+            </div>
+        </div>
+        <div class="col-contact">
+        <div class="row*3"></div>
+        </div>
+    </div>
+    <div class="row-information">
+        <div class="col-logo"></div>
+        <div class="col">
+            <div class="row-linkgroup">
+                <div class="col-link*n"></div>
+            </div>
+            <div class="row-contect"></div>
+            <div class="row-picture">
+                <div class="col*4"></div>
+            </div>
+        </div>
+    </div>
+</div>
