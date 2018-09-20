@@ -1,0 +1,116 @@
+<div class="row-first-screen">
+    <div class="row-nav-global">
+        <div class="col-left">
+            <div class="col-logo"></div>
+            <div class="col-place"></div>
+        </div>
+        <div class="col-right">
+            <div class="row-land"></div>
+            <div class="row-link-group"></div>
+        </div>
+    </div>
+    <div class="row-main-titile">
+        <div class="row-big-title"></div>
+        <div class="row-small-title"></div>
+    </div>
+    <div class="row-seach-bar">
+        <div class="row-kind"></div>
+        <div class="row-input-box"></div>
+    </div>
+    <div class="row-other">
+        <div class="col-word"></div> <!--*n-->
+    </div>
+</div>
+<div class="main">
+    <div class="row-kind">
+        <div class="col"> <!--*3-->
+            <div class="row-picture"></div>
+            <div class="row-big-word"></div>
+            <div class="row-small-word"></div>
+        </div>
+    </div>
+    <div class="row-app">
+        <div class="big-title"></div>
+        <div class="content"></div>
+        <div class="download">
+            <div class="col-download">
+                <div class="row-iphone"></div>
+                <div class="row-android"></div>
+            </div>
+            <div class="picture"></div>
+        </div>
+    </div>
+    <div class="row-second-house-recommend">
+            <div class="row-title">
+                <div class="col-main-title">
+                    <div class="row-big"></div>
+                    <div class="row-small"></div>
+                </div>
+                <div class="col-link"></div>
+            </div>
+            <div class="row-cardgroup"><!--*n-->
+                <div class="col">
+                    <div class="picture">
+                        <div class="row-price"></div>
+                    </div>
+                    <div class="row-big-title"></div>
+                    <div class="row-small-title"></div>
+                </div>
+            </div>
+    </div>
+    <div class="row-house-estate-recommend">
+        <div class="row-title">
+            <div class="col-word">
+                <div class="row-big"></div>
+                <div class="row-small"></div>
+            </div>
+            <div class="col-link"></div>
+        </div>
+        <div class="row-card-group">
+            <div class="col">
+                <div class="row-picture"></div>
+                <div class="row-name"></div>
+                <div class="row">
+                    <div class="col-price"></div>
+                    <div class="col-time"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-newhouse-recommend">
+        <div class="row-title">
+            <div class="col-word">
+                <div class="row-big"></div>
+                <div class="row-small"></div>
+            </div>
+            <div class="col-link"></div>
+        </div>
+        <div class="row-card-group">
+            <div class="picture">
+                <div class="row-name"></div>
+                <div class="row-price"></div>
+            </div><!--*3-->
+        </div> 
+    </div>
+    <div class="slogan">
+        <div class="col-word"></div>
+        <div class="col-content">
+            <div class="row-title"></div>
+            <div class="row-seach-bar"></div>
+        </div>
+    </div>
+</div>
+<div class="foot">
+    <div class="row-link-group">
+        <div class="col-linkgroup"></div>
+        <div class="col-telephone"></div>
+    </div>
+    <div class="row-link-kind">
+        <div class="col-kind"></div>
+        <div class="col-linkgroup"></div>
+    </div>
+    <div class="information">
+        <div class="row-1"></div>
+        <div class="row-2"></div>
+    </div>
+</div>
