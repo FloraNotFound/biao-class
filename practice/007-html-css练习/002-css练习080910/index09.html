@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .blue-border{
+        border: solid royalblue;
+    }
+
+    .blue{
+        color: royalblue;
+    }
+
+    div{
+        color: royalblue;
+    }
+
+    .danger{
+        color: darkred;
+    }
+
+    [href^="http://www."]{
+        border: 2px dashed #000000;
+    }
+    </style>
+</head>
+<body>
+    <p class="blue-border">A</p> <!--蓝色边框，border: solid royalblue; -->
+    <p class="blue-border">B</p> <!--同上-->
+    <p class="blue">C</p> <!--蓝色字体：color: royalblue;-->
+    <p class="blue">D</p> <!--同上-->
+    <div>A</div>
+    <div class="danger">B</div>
+    <div>C</div>
+    <div>D
+        <div class="danger">Yo</div>
+    </div>
+    <h1>我是个标题</h1>
+    <a href="http://www.taobao.com">淘宝网</a>
+    <a href="http://wikipedia.org">百科大全</a>
+    <a href="http://biaoyansu.com">表严肃</a>
+</body>
+</html>
