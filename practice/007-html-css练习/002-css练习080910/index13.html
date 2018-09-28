@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .kuang>* {
+        border: solid;
+        margin: 10px;
+        background-color: hotpink;
+        width: 10%
+    }
+
+    #box-1 {
+    border-radius: 10px 10px;
+    }
+
+    #box {
+    border-radius: 10px 0px 20px 30px
+    }
+    
+    .box > *{
+        width: 10px;
+        height: 10px;
+        background-color: pink;
+        border: solid;
+    }
+    </style>
+</head>
+<body>
+    <div class="kuang">
+        <div id="box-2">我是正常框框</div>
+        <div id="box-1">我是萌框框</div>
+        <div id="box">我是个怪框框。</div>
+    </div>
+    <div class="box">
+        <div id="a">A</div>
+        <div id="b">B</div>
+        <div id="c">C</div>
+        <div id="d">D</div>
+        <div id="e">E</div>
+    </div>
+</body>
+</html>
