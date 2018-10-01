@@ -1,0 +1,32 @@
+<style>
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row::before,
+.row::after{
+    content: '';
+    display:block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    border: solid 2px black;
+}
+
+.left{
+    width: 50%;
+}
+
+.right{
+    width:50%;
+}
+</style>
+
+<div class="row">
+    <div class="col left">a</div>
+    <div class="col right">b</div>
+</div>
