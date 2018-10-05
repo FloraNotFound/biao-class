@@ -17,6 +17,12 @@ float: left;
 
 }
 
+.container{
+    max-width: 1080px;
+    margin-left:auto; 
+    margin-right: auto
+}
+
 .col-1{
     width:4.16666666666666667%;
 }
@@ -90,6 +96,62 @@ float: left;
     width:100%;
 }
 
+.logo{
+    display: inline-block;
+    background-image: url(https://s1.ljcdn.com/feroot/pc/asset/img/home/spriteV2_new.png?index=20170526)
+    ;width:95px;
+    height: 55px;
+    background-position: 0px -520px;
+    
+}
+
+.icon-location{
+    background-image: url(https://s1.ljcdn.com/feroot/pc/asset/img/home/spriteV2_new.png?index=20170526);
+    height:30px;
+    width: 18px;
+    display: inline-block;
+    background-position:570px -520px;
+}
+
+span.location{
+    
+    font-family: sans-serif;
+    font-size: 12px;
+    position: relative;;
+    bottom: 15px;
+    right: 5px;
+    color: rgba(255,255,255, .9);
+    border-radius:15px;
+    background:rgba(0, 0,0, .3);
+}
+
+
+.nav{
+    background:url(https://s1.ljcdn.com/feroot/pc/asset/img/home/bannerV2.jpg);
+   
+}
+
+.link{
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+
+}
+
+.small {
+    
+    
+    color:rgb(255, 255, 255,.8)
+}
+
+.big a{
+    padding-left: 10px
+}
+
 </style>
 
 
@@ -98,30 +160,32 @@ float: left;
 
 
 
-<div class="row">
-    <div class="col col-6">
-        <a href="#" class="logo"></a>
-        <span class="locetion"><span class="icon-location"></span>北京</span>
-    </div>
-    <div class="col col-18">
-        <div>
-            <a href="#">登陆</a>
-            <a href="#">注册</a>
-        </div>
-        <div>
-            <a href="#">二手房</a>
-            <a href="#">新房</a>
-            <a href="#">租房</a>
-            <a href="#">旅居</a>
-            <a href="#">海外</a>
-            <a href="#">小区</a>
-            <a href="#">经纪人</a>
-            <a href="#">指南</a>
-            <a href="#">房价</a>
-            <a href="#">工具</a>
-            <a href="#">经验</a>
-            <a href="#">发布房源</a>
-            <a href="#">企业汇</a>
-        </div>
-    </div>
+<div class="row nav">
+   <div class="container">
+        <div class="col col-6">
+                <a href="#" class="logo"></a>
+                <span class="location"><span class="icon-location"></span>北京</span>
+            </div>
+            <div class="col col-18 link">
+                <div>
+                    <a class="small" href="#">登陆</a>
+                    <a class="small" href="#">注册</a>
+                </div>
+                <div class="big">
+                    <a href="#">二手房</a>
+                    <a href="#">新房</a>
+                    <a href="#">租房</a>
+                    <a href="#">旅居</a>
+                    <a href="#">海外</a>
+                    <a href="#">小区</a>
+                    <a href="#">经纪人</a>
+                    <a href="#">指南</a>
+                    <a href="#">房价</a>
+                    <a href="#">工具</a>
+                    <a href="#">经验</a>
+                    <a href="#">发布房源</a>
+                    <a href="#">企业汇</a>
+                </div>
+            </div>
+   </div>
 </div>
