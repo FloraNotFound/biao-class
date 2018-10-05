@@ -106,7 +106,7 @@
     background-color: #333
 }
 
-.nav a{
+.nav a, button{
     text-decoration: none;
     color: #b0b0b0;
     padding: 6px ;
@@ -116,8 +116,34 @@
 }
 
 a:hover{
-    color: aliceblue
+    color: aliceblue;
 }
+
+
+
+.nav a::after{
+    display: inline-block;
+    content: '';
+    width: 1px;
+    height: 1.1em;
+    background-color: #555;
+    position: relative;
+    top: 2px;
+    left: 6px;
+    
+}
+
+a:last-of-type::after{
+    display: none;
+}
+
+button{
+    background-color: #333333;
+    border: none;
+    padding-left: 15px
+}
+
+
 </style>
 
 
@@ -138,7 +164,7 @@ a:hover{
             <a href="#">登陆</a>
             <a href="#">注册</a>
             <a href="#">消息通知</a>
-            <a href="#">购物车</a>
+            <button  class="btn" >购物车</button>
         </div>    
     </div>   
 </div>
