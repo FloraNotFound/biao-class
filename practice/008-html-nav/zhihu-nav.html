@@ -1,0 +1,195 @@
+<style>
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+form{
+    margin:0;
+}
+
+body{
+    margin: 0;
+}
+
+.row::after,.row::before{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col{
+    float: left;
+}
+
+.nav{
+   background-color: pink
+}
+
+.container{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-1{
+    width:4.16666666666666667%;
+}
+.col-2{
+    width:8.3333333333333333%;
+}
+.col-3{
+    width:12.5%;
+}
+.col-4{
+    width:16.666666666666666%;
+}
+.col-5{
+    width:20.833333333333336%;
+}
+.col-6{
+    width:25%;
+}
+.col-7{
+    width:29.1666666666666666%;
+}
+.col-8{
+    width:33.3333333333333333%;
+}
+.col-9{
+    width:37.5%;
+}
+.col-10{
+    width:41.66666666666666667%;
+}
+.col-11{
+    width:45.833333333333333336%
+}
+.col-12{
+    width:50%;
+}
+.col-13{
+    width:54.1666666666666666667%
+}
+.col-14{
+    width:58.3333333333333336%;
+}
+.col-15{
+    width:62.50000000000000001%;
+}
+.col-16{
+    width:66.66666666666666667%;
+}
+.col-17{
+    width:70.833333333333333334%;
+}
+.col-18{
+    width:75%;
+}
+.col-19{
+    width:79.166666666666666667%;
+}
+.col-20{
+    width:83.3333333333333333334%;
+}
+.col-21{
+    width:87.5%;
+}
+.col-22{
+    width:91.6666666666666666667%;
+}
+.col-23{
+    width:95.83333333333333333333%;
+}
+.col-24{
+    width:100%;
+}
+
+.logo{
+    background-image: url(http://dummyimage.com/60x50/0084ff);
+    height:50px;
+    width: 60px;
+    display:inline-block;
+    margin-right: 27px
+}
+
+
+
+a{
+    text-decoration: none;
+    font-size: 10px;
+    padding:16px 7px;
+    display: inline-block;
+    color: #999999;
+    font-family: sans-serif;
+}
+
+a:hover{
+    color:#222222
+}
+
+input,button{
+    height: 30px;
+
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    outline: none
+}
+
+input:focus{
+    border: 1px solid #666666
+}
+
+button{
+    margin-left: 5px;
+    background-color:#0084ff;
+    color: rgba(255, 255, 255, .8);
+    border-radius: 7px;
+}
+
+button:hover{
+   background-color: blue
+}
+
+.icon{
+    float: right;
+    background-image: url(http://dummyimage.com/30x50/0084ff);
+    width:30px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+
+
+
+
+
+</style>
+
+<div class="row nav">
+   <div class="row container">
+        <div class="col col-8">
+            <div class="col col-8 logo"></div>
+            <div class="col col-16">
+                <a href="#">首页</a>
+                <a href="#">发现</a>
+                <a href="#">话题</a>
+            </div>
+        </div>
+        <div class="col col-10">
+            <form >
+                <input type="seach" placeholder="做秋风中最靓的仔" class="col col-18">
+                <button>提问</button>
+            </form>
+        </div>
+        <div class="col col-6 picture">
+            <a href="#" class=" icon"></a>
+            <a href="#" class=" icon"></a>
+            <a href="#" class=" icon"></a>
+        </div>
+   </div>
+   
+</div>
