@@ -1,9 +1,50 @@
 <style>
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body,form{
+    margin:0
+}
+
+.row::after,.row::before{
+    display: block;
+    content: '';
+    clear: both;
+}
 
 .container{
     max-width: 1080px;
     margin-left:auto;
     margin-right:auto; 
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+.main a,
+.footer a{
+    color:#259;
+}
+
+.main a:hover,
+.footer a:hover{
+    background-color: #259;
+    color: white
+}
+
+.col{
+    float: left;
+}
+
+img{
+    max-width: 100%;
 }
 
 .col-1{
@@ -79,61 +120,161 @@
     width:100%;
 }
 
+.nav.global {
+    background: #545652;
+}
+
+.nav.global .right{
+    text-align: right;
+}
+
+.nav.global a{
+    color: #d5d5d5;   
+    padding:7px 8px;  
+    font-size: 7px;
+   
+}
+
+.nav.global a:hover{
+    color: aliceblue;
+}
+
+.nav.page {
+  padding: 20px ;
+  background-color: #f0f6f3;
+}
+
+.nav.page .logo{
+   padding-right: 15px;
+}
+
+.nav.page .link-group{
+    padding-left:20px;
+    line-height: 2;
+}
+
+.nav.page .link-group a{
+    padding:0px 10px;
+    color: #037b82;
+}
+
+.nav.page .link-group a:hover{
+    background-color: #037b82;
+    color: aliceblue;
+}
+
+.nav.page .seach{
+  position: relative;
+}
+
+input,button{
+    outline: none;
+    padding: 5px 10px;
+}
+
+input:focus,
+button:active{
+    outline:1px solid #e1e9e1;
+}
+
+input{
+    width: 100%;
+    
+}
+
+button{
+    position: absolute;
+    right: 1.5px;
+    top: 2.9px;
+    background: transparent;
+    border: none
+}
+
+.nav.page{
+    margin-bottom: 30px;
+}
+
+.big-title{
+    font-size: 27px;
+    font-weight: bold;
+    color: #494949;
+    padding-bottom: 30px;
+}
+
+.all .item .like{
+    text-align: center;
+    color: #ca6445;
+    background: #fae9da;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.all.title{
+
+}
 
 </style>
 
 
 
-<div class="row global nav">
-    <div class="col col-18">
-        <a href="#">豆瓣</a>
-        <a href="#">读书</a>
-        <a href="#">电影</a>
-        <a href="#">音乐</a>
-        <a href="#">同城</a>
-        <a href="#">小组</a>
-        <a href="#">阅读</a>
-        <a href="#">FM</a>
-        <a href="#">时间</a>
-        <a href="#">豆品</a>
-        <a href="#">更多</a>
-    </div>
-    <div class="col col-8">
-        <a href="#">下载豆瓣客户端</a>
-        <a href="#">登陆</a>
-        <a href="#">注册</a>
+<div class=" nav global">
+    <div class="row container">
+        <div class="col col-18">
+            <a href="#">豆瓣</a>
+            <a href="#">读书</a>
+            <a href="#">电影</a>
+            <a href="#">音乐</a>
+            <a href="#">同城</a>
+            <a href="#">小组</a>
+            <a href="#">阅读</a>
+            <a href="#">FM</a>
+            <a href="#">时间</a>
+            <a href="#">豆品</a>
+            <a href="#">更多</a>
+        </div>
+        <div class="col col-6 right">
+            <a href="#">下载豆瓣客户端</a>
+            <a href="#">登陆</a>
+            <a href="#">注册</a>
+        </div>
     </div>
 </div>
 <div class="main">
-    <div class="row page nav">
-        <div class="col col-6 logo">
-            <img src="https://img3.doubanio.com/f/shire/86033885f71d164e11b4ecc2fc06e945fe01c10b/pics/nav/lg_group_a11@2x.png" alt="豆瓣图片">
-        </div>
-        <div class="col col-10 link-group">
-            <a href="">精选</a>
-            <a href="">文化</a>
-            <a href="">行摄</a>
-            <a href="">娱乐</a>
-            <a href="">时尚</a>
-            <a href="">生活</a>
-            <a href="">科技</a>
-        </div>
-        <div class="col col-8 seach">
-            <form>
-                <input type="seach" placeholder="小组、话题">
-                <button type="submit"><img src="https://img3.doubanio.com/f/shire/f71f15922ebd7c0ff0ea0e7a25577529efd8981a/pics/icon/bn_srh_1.png" alt=""></button>
-            </form>
-        </div>
+    <div class=" nav page">
+        <div class="row container">
+            <div class="col col-3 logo">
+                 <img src="https://img3.doubanio.com/f/shire/86033885f71d164e11b4ecc2fc06e945fe01c10b/pics/nav/lg_group_a11@2x.png">
+            </div>
+            <div class="col col-14 link-group">
+                <a href="">精选</a>
+                <a href="">文化</a>
+                <a href="">行摄</a>
+                <a href="">娱乐</a>
+                <a href="">时尚</a>
+                <a href="">生活</a>
+                <a href="">科技</a>
+            </div>
+            <div class="col col-7 seach">
+                <form>
+                    <input type="seach" placeholder="小组、话题">
+                    <button type="submit"><img src="https://img3.doubanio.com/f/shire/f71f15922ebd7c0ff0ea0e7a25577529efd8981a/pics/icon/bn_srh_1.png" alt=""></button>
+                </form>
+            </div>
+        </div>   
     </div>
     <div class="container">
-        <div class="title">讨论精选</div>
+        <div class="big-title">讨论精选</div>
         <div class="row all">
             <div class="col col-17 item">
-                <div class="col col-6 like">
-                    <div>4</div>
-                    <div>喜欢</div>
+                <div class="col col-2">
+                    <div class="like">
+                        <div>4</div>
+                        <div>喜欢</div>
+                    </div>
                 </div>
-                <div class="col col-18 ">
+                <div class="col col-22 ">
                     <div class="title">
                         <a href="#">探讨原生家庭的影响</a>
                     </div>
