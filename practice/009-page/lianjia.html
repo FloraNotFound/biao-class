@@ -153,10 +153,14 @@ a{
 
 .locale{
     padding: 3px 6px;
-    vertical-align: middle;
     background-color: rgba(0, 0, 0, .25);
     border-radius: 10px;
+    display: inline-block;
    
+}
+.locale span{
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .locale-icon{
@@ -164,7 +168,7 @@ a{
     width: 17px;
     height: 18px;
     display: inline-block;
-    background-position: -186px -14px;
+    background-position: -186px -16px;
 }
 
 .login .login-icon{
@@ -173,12 +177,10 @@ a{
     background-image: url(https://s1.ljcdn.com/feroot/pc/asset/img/home/spriteV2_new.png?t=2017052520523424);
     background-position: -199px -18px;
     display: inline-block;
+}
+.login.text-right > *{
     vertical-align: middle
 }
-
-.login.right .word{
-    vertical-align: middle
-} 
 
 .right .link-group{
     font-size: 16px;
@@ -212,8 +214,25 @@ a{
     max-width:700px;
     margin-left: auto;
     margin-right:auto;
+    background-color: aqua
 
 }
+
+
+.centered .seach-bar .seach input,
+.centered .seach-bar .seach button{
+    padding: 5px 10px;
+}
+
+.centered .seach-bar .seach input{
+    width: 80%;
+}
+
+.centered .seach-bar .seach button{
+    width: 20%;
+}
+
+
 </style>
 
 <div class="first-screen">
@@ -222,7 +241,7 @@ a{
             <div class="col ">
                 <a class="logo" href="#"></a>
                 <span class="locale">
-                    <span class="locale-icon"></span>北京
+                    <span class="locale-icon"></span><span>北京</span>
                 </span>
             </div>
             <div class="right ">
