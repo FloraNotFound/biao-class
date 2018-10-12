@@ -56,6 +56,19 @@ a{
     float: left;
 }
 
+input,button{
+    outline: none;
+    border: none;
+}
+
+input{
+    border-radius: 3px 0px 0px 3px
+}
+
+button{
+    border-radius: 0px 3px 3px 0px
+}
+
 .col-1{
     width:4.16666666666666667%;
 }
@@ -130,8 +143,11 @@ a{
 }
 
 .first-screen{
-    background-color: #666;
+    background-image: url(https://s1.ljcdn.com/feroot/pc/asset/img/home/bannerV2.jpg);
     color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center
 }
 
 .first-screen a{
@@ -192,12 +208,12 @@ a{
 }
 
 .centered{
-    margin-top: 140px;
+    margin: 140px 0px; 
 }
 
 .centered .title{
     line-height: 1.3;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     text-align: center;
 }
 
@@ -207,21 +223,19 @@ a{
 }
 
 .centered .small-title{
-    font-size: 20px
+    font-size: 22px
 }
 
 .centered .seach-bar{
     max-width:700px;
     margin-left: auto;
     margin-right:auto;
-    background-color: aqua
-
 }
 
 
 .centered .seach-bar .seach input,
 .centered .seach-bar .seach button{
-    padding: 5px 10px;
+    padding: 20px 10px;
 }
 
 .centered .seach-bar .seach input{
@@ -231,6 +245,67 @@ a{
 .centered .seach-bar .seach button{
     width: 20%;
 }
+
+.seach{
+font-size: 0;
+}
+
+.seach-bar .find{
+    font-size: 12px;
+    padding: 0px 0px 8px 0px
+}
+
+.seach-bar .find span{
+    padding: 0px 5px 0px 0px;
+    display: inline-block;
+    color:rgba(255, 255, 255, .3);
+    font-weight: bold;
+    
+}
+
+.seach-bar .find .active{
+    color: rgba(255, 255, 255, .8);
+}
+
+.seach button{
+    background-color: #00ae66;
+    color: white;
+}
+
+.seach .pointer{
+    position: relative;
+    top: 2px;
+    left: 14px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.about .information a{
+    color: rgba(255, 255, 255, .7)
+}
+
+.about .information > *:hover{
+    color: white;
+}
+
+.about .picture img {
+    max-width: 18px;
+    max-height: 15px;
+}
+
+
+.about .information > *{
+    vertical-align: middle;
+}
+
+.about .information{
+    margin:0px 25px 50px 0px
+}
+
+
 
 
 </style>
@@ -259,7 +334,6 @@ a{
                     <a href="#">小区</a>
                     <a href="#">经纪人</a>
                     <a href="#">指南</a>
-                    <a href="#">指南</a>
                     <a href="#">房价</a>
                     <a href="#">工具</a>
                     <a href="#">经验</a>
@@ -275,13 +349,14 @@ a{
            </div>
             <div class="row seach-bar">
                <div class="find">
-                <span>找二手房</span>
+                <span class="active">找二手房</span>
                 <span>找新房</span>
                 <span>找租房</span>
                 <span>找小区</span>
                 <span>搜问答</span>
                </div>
                <div class="seach">
+                   <div class="pointer"></div>
                    <form>
                        <input type="text" placeholder="请输入区域、商圈或小区名开始找房">
                        <button type="submit">开始找房</button>
@@ -290,16 +365,16 @@ a{
             </div>
         </div>
         <div class="row about">
-            <div class="col">
-                <a class="picture" href="#"></a>
+            <div class="col  information">
+                <a class="picture" href="#"><img src="https://image1.ljcdn.com/materials/list/2016-08-17/php3X11MP.png" alt=""></a>
                 <a href="#">关于仿冒我公司进行不正当竞争行为郑重声明</a>
             </div>
-            <div class="col">
-                <a class="picture" href="#"></a>
+            <div class="col information">
+                <a class="picture" href="#"><img src="https://image1.ljcdn.com/materials/list/2016-06-29/phpAPdvEm.png" alt=""></a>
                 <a href="#">房地产中介诚信服务承诺及保证书</a>
             </div>
-            <div class="col">
-                <a class="picture" href="#"></a>
+            <div class="col information">
+                <a class="picture" href="#"><img src="https://image1.ljcdn.com/materials/list/2018-09-06/phpwRB4sh.png" alt=""></a>
                 <a href="#">致广大用户</a>
             </div>
         </div>
