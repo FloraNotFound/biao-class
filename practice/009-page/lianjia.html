@@ -1,5 +1,5 @@
 <style>
-*{
+    *{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -29,6 +29,7 @@ img{
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
+    overflow: auto;
 }
 
 a{
@@ -62,12 +63,11 @@ input,button{
 }
 
 input{
-    border-radius: 3px 0px 0px 3px
+    border-radius: 3px 0px 0px 3px;
 }
 
 button{
     border-radius: 0px 3px 3px 0px;
-    font-size: 14px;
     font-weight: bold;
 }
 
@@ -277,7 +277,7 @@ font-size: 0;
 
 .seach .pointer{
     position: relative;
-    top: 2px;
+    top: 4px;
     left: 14px;
     width: 0;
     height: 0;
@@ -306,6 +306,181 @@ font-size: 0;
 
 .about .information{
     margin:0px 25px 50px 0px
+}
+
+.house.nav {
+    text-align: center
+}
+
+.house.nav .col span{
+    display: block;
+}
+
+.house.nav .picture{
+    padding:4px 145px;
+}
+
+.house.nav .title{
+    color: #394043;
+}
+
+.house.nav .word{
+    color: rgba(0, 0, 0, .25)
+}
+
+.download{
+    margin:40px 0px 30px 0px;
+    background-image: url(https://s1.ljcdn.com/feroot/pc/asset/img/home/bg-app.jpg);
+    background-size:cover;
+    background-position: center center;
+}
+
+.download .title{
+    background-image: url(https://s1.ljcdn.com/feroot/pc/asset/img/home/spriteV2_new.png?t=2017052520523424);
+    width: 263px;
+    height: 120px;
+    background-position: -448px -379px;
+
+}
+
+.download .content{
+    padding: 46px 0px 90px 0px;
+}
+
+.download .desc{
+    max-width: 40%;
+    font-size: 13px;
+    padding: 18px 0px
+}
+
+.download .iphone{
+    background-image: url(https://s1.ljcdn.com/feroot/pc/asset/img/home/spriteV2_new.png?t=2017052520523424);
+    width: 134px;
+    height: 45px;
+    background-position: -20px -139px;
+    display: block;
+    margin-bottom: 8px
+}
+
+.download .android{
+    background-image: url(https://s1.ljcdn.com/feroot/pc/asset/img/home/spriteV2_new.png?t=2017052520523424);
+    width: 134px;
+    height: 45px;
+    background-position: -20px -195px;
+}
+.download .button{
+    margin-right:10px
+}
+
+
+.download img{
+    max-width: 55%;
+}
+
+.second-house{
+    margin-bottom: 30px;
+}
+
+.second-house .desc a{
+    margin-left: 10px;
+}
+
+.second-house .head,
+.card-group .card,
+.card-group .recent,
+.recommend .head,
+.new-house .head{
+    margin-left: 30px;
+    margin-right: 30px
+}
+
+.card-group .recent{
+    padding: 10px 0px
+}
+
+.card-group .card{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25)
+}
+
+
+
+.title .title-1,
+.title .title-2{
+    font-size: 200%;
+}
+
+.title .title-1{
+    font-weight: bold;
+}
+
+.title .title-2{
+    font-weight: lighter;
+}
+
+.second-house .desc .word,
+.second-house .desc a,
+.recommend a,
+.recommend .desc .word,
+.new-house .desc .word,
+.new-house .desc a,
+.new-house .card
+{
+    padding-bottom: 15px;
+    color:rgba(0, 0, 0, .4);
+}
+
+.second-house .picture,
+.new-house .card{
+    position: relative;
+}
+
+.second-house .picture span{
+    position:absolute;
+    bottom: 20px;
+    background-color: #394043;
+    color: white;
+    padding: 5px;
+}
+
+.name{
+    padding:5px 15px
+}
+
+.second-house .small-title{
+color:#999
+}
+
+ .second-house .big-title{
+    color: #394043
+}
+
+.recommend{
+    background-color: #eeeef1;
+    padding: 30px 0px
+}
+
+.recommend .picture img{
+  min-width: 100%;
+}
+
+.recommend .big-title{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.recommend .right{
+    color: rgba(0, 0, 0, .4)
+}
+
+.new-house .title,
+.new-house .price{
+    position: absolute;
+}
+
+.new-house .card-group .title{
+    top: 30px;
+    left: 15px;
+    display: inline-block
 }
 
 
@@ -345,38 +520,41 @@ font-size: 0;
             </div>
         </div>
         <div class="row centered">
-           <div class="title">
+            <div class="title">
                 <div class="big-title">链接每个家的故事</div>
                 <div class="small-title">北京链家真实租房50319套</div>
-           </div>
+            </div>
             <div class="row seach-bar">
-               <div class="find">
-                <span class="active">找二手房</span>
-                <span>找新房</span>
-                <span>找租房</span>
-                <span>找小区</span>
-                <span>搜问答</span>
-               </div>
-               <div class="seach">
-                   <div class="pointer"></div>
-                   <form>
-                       <input type="text" placeholder="请输入区域、商圈或小区名开始找房">
-                       <button type="submit">开始找房</button>
-                   </form>
-               </div>
+                <div class="find">
+                    <span class="active">找二手房</span>
+                    <span>找新房</span>
+                    <span>找租房</span>
+                    <span>找小区</span>
+                    <span>搜问答</span>
+                </div>
+                <div class="seach">
+                    <div class="pointer"></div>
+                    <form>
+                        <input type="text" placeholder="请输入区域、商圈或小区名开始找房">
+                        <button type="submit">开始找房</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="row about">
             <div class="col  information">
-                <a class="picture" href="#"><img src="https://image1.ljcdn.com/materials/list/2016-08-17/php3X11MP.png" alt=""></a>
+                <a class="picture" href="#"><img src="https://image1.ljcdn.com/materials/list/2016-08-17/php3X11MP.png"
+                        alt=""></a>
                 <a href="#">关于仿冒我公司进行不正当竞争行为郑重声明</a>
             </div>
             <div class="col information">
-                <a class="picture" href="#"><img src="https://image1.ljcdn.com/materials/list/2016-06-29/phpAPdvEm.png" alt=""></a>
+                <a class="picture" href="#"><img src="https://image1.ljcdn.com/materials/list/2016-06-29/phpAPdvEm.png"
+                        alt=""></a>
                 <a href="#">房地产中介诚信服务承诺及保证书</a>
             </div>
             <div class="col information">
-                <a class="picture" href="#"><img src="https://image1.ljcdn.com/materials/list/2018-09-06/phpwRB4sh.png" alt=""></a>
+                <a class="picture" href="#"><img src="https://image1.ljcdn.com/materials/list/2018-09-06/phpwRB4sh.png"
+                        alt=""></a>
                 <a href="#">致广大用户</a>
             </div>
         </div>
@@ -387,42 +565,259 @@ font-size: 0;
         <div class="row house nav">
             <div class="col col-8">
                 <a href="#">
-                    <div class="picture">
+                    <span class="picture">
                         <img src="https://image1.ljcdn.com/materials/list/2016-11-23/phpe022WE.png" alt="">
-                        <div class="title">找二手房</div>
-                        <div class="word">真实二手房源，链家承诺真实在售</div>
+                    </span>
+                    <span class="title">找二手房</span>
+                    <span class="word">真实二手房源，链家承诺真实在售</span>
+                </a>
+            </div>
+            <div class="col col-8">
+                <a href="#">
+                    <span class="picture">
+                        <img src="https://image1.ljcdn.com/materials/list/2016-07-21/php4TtmtO.png" alt="">
 
-                    </div>
+                    </span>
+                    <span class="title">地图找房</span>
+                    <span class="word">为您精准定位，位置周边配套设施一览无余</span>
                 </a>
             </div>
             <div class="col col-8">
                 <a href="#">
-                    <img src="https://image1.ljcdn.com/materials/list/2016-07-21/php4TtmtO.png" alt="">
-                    <div class="title">地图找房</div>
-                    <div class="word">为您精准定位，位置周边配套设施一览无余</div>
-                </a>
-            </div>
-            <div class="col col-8">
-                <a href="#">
-                    <img src="https://image1.ljcdn.com/materials/list/2017-02-16/phphnmv10.png" alt="">
-                    <div class="title">房屋估价</div>
-                    <div class="word">基于海量成交数据，帮您合理定价预估市值</div>
+                    <span class="picture">
+                        <img src="https://image1.ljcdn.com/materials/list/2017-02-16/phphnmv10.png" alt="">
+
+                    </span>
+                    <span class="title">房屋估价</span>
+                    <span class="word">基于海量成交数据，帮您合理定价预估市值</span>
                 </a>
             </div>
         </div>
     </div>
     <div class="row download">
-        <div class="container"></div>
+        <div class="container">
+            <div class="content">
+                <div class="title"></div>
+                <div class="desc">
+                    集二手、新房、租房功能于一体，随时随地任性找房。IM匿名咨询让您放心，消息动态推送让您省心，服务承诺让您安心，数据百科锦囊让您感受贴心漫漫找房路，我们努力为您想更多。
+                </div>
+                <div class="row picture">
+                    <div class="col">
+                        <div class=" button">
+                            <a class="iphone" href="#"></a>
+                            <a class="android" href="#"></a>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <a href="#"><img src="https://ajax.api.lianjia.com/qr/getDownloadQr?location=site_middle&ljweb_channel_key=site_index"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="container">
-        <div class="row second house"></div>
+    <div class="row second-house">
+        <div class="container">
+            <div class="row head">
+                <div class="row title">
+                    <div class="col title-1">二手好房</div>
+                    <div class="col title-2">为你而选</div>
+                </div>
+                <div class="row desc">
+                    <div class="col word">好房源那么多，我们为你精选，链家网会越来越懂你</div>
+                    <a class="link right " href="#">更多北京二手房</a>
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="col col-6">
+                    <div class="card">
+                        <div class="picture">
+                            <img src="https://image1.ljcdn.com/110000-inspection/b545d03b-4c87-43d8-853c-c640f536b131.jpg.280x210.jpg"
+                                alt="">
+                            <span>350万</span>
+                        </div>
+                        <div class="row name">
+                            <div class="big-title">龙城别墅 两居 精装修 供</div>
+                            <div class="small-title">龙城花园北二区 2室1厅</div>
+                        </div>
+                    </div>
+                    <div class="recent">近期关注度较高房源</div>
+                </div>
+                <div class="col col-6">
+                    <div class="card">
+                        <div class="picture">
+                            <img src="https://image1.ljcdn.com/110000-inspection/2558c304-cf38-4c7f-8b27-c278e3717311.jpg.280x210.jpg"
+                                alt="">
+                            <span>380万</span>
+                        </div>
+                        <div class="row name">
+                            <div class="big-title">角门东里两居，格局好，楼层</div>
+                            <div class="small-title">角门东里 2室1厅 62.65平</div>
+                        </div>
+                    </div>
+                    <div class="recent">近期关注度较高房源</div>
+                </div>
+                <div class="col col-6">
+                    <div class="card">
+                        <div class="picture">
+                            <img src="https://image1.ljcdn.com/110000-inspection/611f74db-eedb-4299-8c85-e083d0038514.jpg.280x210.jpg"
+                                alt="">
+                            <span>695万</span>
+                        </div>
+                        <div class="row name">
+                            <div class="big-title">万科紫苑 南北通透全能小三</div>
+                            <div class="small-title">万科紫苑 3室2厅 95.22平</div>
+                        </div>
+                    </div>
+                    <div class="recent">近期关注度较高房源</div>
+                </div>
+                <div class="col col-6">
+                    <div class="card">
+                        <div class="picture">
+                            <img src="https://image1.ljcdn.com/110000-inspection/test-471f5250-0957-4437-887d-b06b2194ac54.png.280x210.jpg"
+                                alt="">
+                            <span>450万</span>
+                        </div>
+                        <div class="row name">
+                            <div class="big-title">富卓苑 低楼层南北通透两居</div>
+                            <div class="small-title">富卓苑 2室1厅 65.59平</div>
+                        </div>
+                    </div>
+                    <div class="recent">近期关注度较高房源</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row slogan">
-        <div class="container"></div>
+    <div class="row recommend">
+        <div class="container">
+            <div class="row head">
+                <div class="row title">
+                    <div class="col title-1">小区</div>
+                    <div class="col title-2">为你推荐</div>
+                </div>
+                <div class="row desc">
+                    <div class="col word">纵览小区，爱上这座城</div>
+                    <a class="link right " href="#">更多北京小区</a>
+                </div>
+            </div>
+            <div class="card-group">
+                <div class="col col-8">
+                    <div class="card">
+                        <div class="picture">
+                            <img src="https://image1.ljcdn.com/hdic-resblock/356c6bce-4179-40ae-977d-d1e2c59ebe80.jpg.280x210.jpg"
+                                alt="">
+                        </div>
+                        <div class="row name">
+                            <div class="big-title">远洋山水</div>
+                            <div class="small-title">
+                                <span class="col">66224元/平</span>
+                                <span class="right">2003年建</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent">近期关注度较高房源</div>
+                </div>
+                <div class="col col-8">
+                    <div class="card">
+                        <div class="picture">
+                            <img src="https://image1.ljcdn.com/hdic-resblock/0f31bdd0-3cf4-47ce-bbb1-14e269b8cf5f.jpg.280x210.jpg"
+                                alt="">
+                        </div>
+                        <div class="row name">
+                            <div class="big-title">北京新天地</div>
+                            <div class="small-title">
+                                <span class="col">55524元/平</span>
+                                <span class="right">2004年建</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent">近期关注度较高房源</div>
+                </div>
+                <div class="col col-8">
+                    <div class="card">
+                        <div class="picture">
+                            <img src="https://image1.ljcdn.com/hdic-resblock/c057cbaf-d5a1-4dc7-af82-b852f4f22b97.jpg.280x210.jpg"
+                                alt="">
+                        </div>
+                        <div class="row name">
+                            <div class="big-title">荣丰2008</div>
+                            <div class="small-title">
+                                <span class="col">88303元/平</span>
+                                <span class="right">2000年建</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent">近期关注度较高房源</div>
+                </div>
+            </div>
+        </div>
+        <div class="row slogan">
+            <div class="container"></div>
+        </div>
     </div>
-</div>
-<div class="footer">
-    <div class="row link-group"></div>
-    <div class="row kind"></div>
-    <div class="row information"></div>
-</div>
+    <div class="row new-house">
+        <div class="container">
+            <div class="row new house">
+                <div class="container">
+                    <div class="row head">
+                        <div class="row title">
+                            <div class="col title-1">新房</div>
+                            <div class="col title-2">新起航</div>
+                        </div>
+                        <div class="row desc">
+                            <div class="col word">真实信息准确同步，楼盘动态一手掌握</div>
+                            <a class="link right " href="#">更多北京新房</a>
+                        </div>
+                    </div>
+                    <div class="row card-group">
+                        <div class="col col-8">
+                            <div class="card">
+                                <img src="https://image1.ljcdn.com/xf-resblock/b384bab6-1f47-44c2-997b-e8309d7f7a1e.jpeg.510x300.jpg"
+                                    alt="">
+                                    
+                                <div class="row title">
+                                    <div class="title">万科大都会滨江N2</div>
+                                    <div class="price">65000元/平</div>
+                                </div>
+                                <div class="money">立减15万</div>
+                            </div>
+                            
+                        </div>
+                        <div class="col col-8">
+                            <div class="card">
+                                    <div class="bg">
+
+                                    </div>
+                                    <img src="https://image1.ljcdn.com/xf-resblock/10f487c9-09e1-46e7-ac3c-77e21dc20f9e.jpg.510x300.jpg"
+                                    alt="">
+                                <div class="row title">
+                                    <div class="one-title">万科大都会滨江N2</div>
+                                    <div class="price">65000元/平</div>
+                                </div>
+                                <div class="money">立减15万</div>
+                            </div>
+                            
+                        </div>
+                        <div class="col col-8">
+                            <div class="card">
+                                    <img src="https://image1.ljcdn.com/xf-resblock/9fa05f6d-87ca-4954-ad31-1ba147b95c27.jpg.510x300.jpg"
+                                    alt="">
+                                <div class="row title">
+                                    <div class="title">万科大都会滨江N2</div>
+                                    <div class="price">65000元/平</div>
+                                </div>
+                                <div class="money">立减15万</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row link-group"></div>
+            <div class="row kind"></div>
+            <div class="row information"></div>
+        </div>
