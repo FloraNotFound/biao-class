@@ -25,8 +25,9 @@ img{
     max-width: 100%;
 }
 
-input,button{
+input, .button{
     outline: none;
+    background-color: #fff;
 }
 
 .container{
@@ -134,9 +135,7 @@ a{
     width:100%;
 }
 
-.col-5-5{
-    
-}
+
 
 .advertising{
     background-image: url(https://i1.mifile.cn/a4/cms_15392619375595_OtGhC.jpg);
@@ -230,7 +229,7 @@ a{
     color: #ff6700;
 }
 
-.page.nav input,.page.nav button{
+.page.nav input,.page.nav .button{
     padding: 15px 8px
 }
 
@@ -238,16 +237,20 @@ a{
     width: 80%;
 }
 
-.page.nav button{
+.page.nav .button{
     width: 20%;
-    border-left: none;
     color:#616161;
+}
+
+.czs-search-l{
+    border-left: none
 }
 
 .page.nav .seach-bar{
     font-size: 0;
     margin-top: 10px;
 }
+
 
 .page.nav .words{
     z-index: 1;
@@ -399,7 +402,7 @@ a{
                     <form>
                         <div class="input">
                             <input type="seach">
-                            <button type="submit">搜索</button>
+                            <input class="button" type="submit"><i class="czs-search-l"></i>
                         </div>
                     </form>
                 </div>
