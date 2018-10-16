@@ -140,23 +140,21 @@ a{
     width: 20%;
 }
 
-
-.advertising{
-    
+.first.advertising{
+    background-image: url(https://i1.mifile.cn/a4/cms_15392619375595_OtGhC.jpg);
     background-position: center ;
     background-repeat: no-repeat;
     height: 120px;
 }
 
-.first.advertising{
-    background-image: url(https://i1.mifile.cn/a4/cms_15392619375595_OtGhC.jpg);
-}
-
-.phone.advertising{
+.phone-advertising{
     background-image: url(https://i1.mifile.cn/a4/xmad_15283599920813_VWpSg.jpg);
     margin-top: 20px;
     margin-bottom: 20px;
     background-size:contain;
+    background-position: center ;
+    background-repeat: no-repeat;
+    height: 120px;
 }
 
 .global.nav{
@@ -299,7 +297,6 @@ a{
 .carousel .bg{
     background-image: url(https://i1.mifile.cn/a4/xmad_15338982677936_eQTJk.jpg);
     max-width: 100%;
-    height: 390px;
     background-repeat: no-repeat;
     background-position:center ;
     background-size: cover;
@@ -379,7 +376,7 @@ a{
     font-size: 16px;
 }
 
-.main .mi-buy .card-group{
+.main .card-group{
     text-align: center;
     
 }
@@ -413,7 +410,7 @@ a{
 
 }
 
-.main .mi-buy .word{
+.main  .word{
  color:rgba(0,0,0,.5);
 }
 
@@ -426,32 +423,74 @@ a{
     position: relative;
 }
 
-.main .mi-buy .left-2 img{
+.main  .left-2 img{
     height: 160px;
     padding-top: 30px
 }
 
-.main .mi-buy .left-2 .card > *{
+.main  .left-2 .card > *{
     padding-top: 5px
 }
 
-.main .mi-buy .left-2 .price span:first-child{
+.main  .left-2 .price span:first-child{
     color: #e53935;
     font-size: 12px;
 }
 
-.main .mi-buy .left-2 .price span:last-child{
+.main  .left-2 .price span:last-child{
     text-decoration: line-through;
     color:#757575
 }
 
-.main .mi-buy .left-2 .on-sale{
+.main .left-2 .on-sale{
     position: absolute;
     top: 0;
-    left: 80;
+    left: 80px;
     color: white;
     background-color: red;
-   padding-top: 0
+    padding-top: 0;
+}
+
+.main .phone{
+    background-color:#f5f5f5;
+}
+
+.phone .head{
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.phone .card-group{
+    margin-bottom: 20px
+}
+
+.phone .left-1 img{
+    height: 473px
+}
+
+.phone .left-2 img{
+    height: 120px
+}
+
+
+.main .phone .left-2 .card{
+    margin-left: 10px;
+    background-color: rgba(0,0,0,.02); 
+    font-size: 10px;
+    padding-bottom: 33px;
+    position: relative;
+}
+
+.main .phone .left-2 .card {
+    margin-bottom: 30px;
+}
+
+.main .phone .left-2 .card{
+    background: #fff;
+}
+
+.main .phone .head a:hover{
+    color: #ff6700
 }
 
 </style>
@@ -598,8 +637,9 @@ a{
     </div>
 
     <div class="main">
-        <div class="container">
-            <div class="row mi-buy">
+
+        <div class="row mi-buy">
+            <div class="container">
                 <div class="row head">
                     <div class="col title">小米闪购</div>
                     <div class="right">
@@ -689,9 +729,11 @@ a{
                         </div>
                     </div>
                 </div>
-                <div class="phone advertising"></div>
+                <div class="phone-advertising"></div>
             </div>
-            <div class="row phone">
+        </div>
+        <div class="row phone">
+            <div class="container">
                 <div class="row head">
                     <div class="col title">手机</div>
                     <div class="right">
@@ -699,26 +741,157 @@ a{
                     </div>
                 </div>
                 <div class="row card-group">
-                    <div class="col col5-5 picture">
-                        <img src="https://i1.mifile.cn/a4/xmad_15323220713837_GLBVX.jpg" alt="">
+                    <div class=" left-1">
+                        <div class="col col-5-5 card">
+                            <div class="picture">
+                                <img src="https://i1.mifile.cn/a4/xmad_15323220713837_GLBVX.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="row one">
-                        <div class="col col5-5"></div>
-                        <div class="col col5-5"></div>
-                        <div class="col col5-5"></div>
-                        <div class="col col5-5"></div>
-                    </div>
-                    <div class="row two">
-                        <div class="col col5-5"></div>
-                        <div class="col col5-5"></div>
-                        <div class="col col5-5"></div>
-                        <div class="col col5-5"></div>
+                    <div class=" left-2">
+                        <div class="  top">
+                            <div class="col col-5-5">
+                                <div class="card">
+                                    <div class="picture">
+                                        <img src="https://i1.mifile.cn/a1/pms_1537323963.1278763!220x220.jpg" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <div class="big-title">小米6 青春版 4GB+64GB</div>
+                                        <div class="word">潮流镜面渐变色，2400万</div>
+                                    </div>
+                                    <div class="price">
+                                        <span>1399元</span>
+                                        <span>1499元</span>
+                                    </div>
+                                    <div class="on-sale">新品</div>
+                                </div>
+                            </div>
+                            <div class="col col-5-5">
+                                <div class="card">
+                                    <div class="picture">
+                                        <img src="https://i1.mifile.cn/a1/pms_1537356460.6227958!220x220.png" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <div class="big-title">小米WIFI放大器 2 白色</div>
+                                        <div class="word">速率翻倍，覆盖无忧</div>
+                                    </div>
+                                    <div class="price">
+                                        <span>1 元</span>
+                                        <span>49元</span>
+                                    </div>
+                                    <div class="on-sale">立减100元</div>
+                                </div>
+                            </div>
+                            <div class="col col-5-5">
+                                <div class="card">
+                                    <div class="picture">
+                                        <img src="https://i1.mifile.cn/a1/pms_1527684990.93616987!220x220.jpg" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <div class="big-title">米加随身风扇 蓝色</div>
+                                        <div class="word">能放在口袋的小风扇</div>
+                                    </div>
+                                    <div class="price">
+                                        <span>1 元</span>
+                                        <span>19.9元</span>
+                                    </div>
+                                    <div class="on-sale">1元秒杀</div>
+                                </div>
+                            </div>
+                            <div class="col col-5-5">
+                                <div class="card">
+                                    <div class="picture">
+                                        <img src="https://i1.mifile.cn/a1/pms_1522034061.12391230!220x220.jpg" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <div class="big-title">小米手环3腕带 深空蓝</div>
+                                        <div class="word">顺滑柔软 触感舒适</div>
+                                    </div>
+                                    <div class="price">
+                                        <span>16.9 元</span>
+                                        <span>19.9元</span>
+                                    </div>
+                                    <div class="on-sale">立减100元</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" bottom">
+                            <div class="col col-5-5">
+                                <div class="card">
+                                    <div class="picture">
+                                        <img src="https://i1.mifile.cn/a1/pms_1527144859.25489991!220x220.jpg" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <div class="big-title">米家转换器 白色 通</div>
+                                        <div class="word">无线转换 让传统墙插变</div>
+                                    </div>
+                                    <div class="price">
+                                        <span>1 元</span>
+                                        <span>19.9元</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col col-5-5">
+                                <div class="card">
+                                    <div class="picture">
+                                        <img src="https://i1.mifile.cn/a1/pms_1495692033.10494295!220x220.jpg" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <div class="big-title">小米WIFI放大器 2 白色</div>
+                                        <div class="word">速率翻倍，覆盖无忧</div>
+                                    </div>
+                                    <div class="price">
+                                        <span>1 元</span>
+                                        <span>49元</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col col-5-5">
+                                <div class="card">
+                                    <div class="picture">
+                                        <img src="https://i1.mifile.cn/a1/pms_1509723483.31416776!220x220.jpg" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <div class="big-title">米加随身风扇 蓝色</div>
+                                        <div class="word">能放在口袋的小风扇</div>
+                                    </div>
+                                    <div class="price">
+                                        <span>1 元</span>
+                                        <span>19.9元</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col col-5-5">
+                                <div class="card">
+                                    <div class="picture">
+                                        <img src="https://i1.mifile.cn/a1/pms_1525853341.8312102!220x220.jpg" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <div class="big-title">小米手环3腕带 深空蓝</div>
+                                        <div class="word">顺滑柔软 触感舒适</div>
+                                    </div>
+                                    <div class="price">
+                                        <span>16.9 元</span>
+                                        <span>19.9元</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
+
                 </div>
+
             </div>
         </div>
-        <div class="footer"></div>
+
+    </div>
+    <div class="footer"></div>
 </body>
 
 </html>
