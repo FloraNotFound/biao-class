@@ -11,7 +11,7 @@ body,form{
 
 body{
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5;
 }
 
@@ -40,6 +40,7 @@ input, .button{
 a{
     text-decoration: none;
     display: inline-block;
+    color: #212121
 }
 
 .text-right{
@@ -197,7 +198,7 @@ a{
     position: relative;
 }
 
-.picture{
+ .page.nav .picture{
     margin-right: 20px;
 }
 
@@ -364,8 +365,70 @@ a{
    margin-bottom:15px ;
 }
 
-.main .mi-buy .head .title{
-    font-size: 16px
+.mi-buy .col.title {
+    font-size: 16px;
+}
+
+.main .mi-buy .card-group{
+    text-align: center;
+}
+
+.main .mi-buy .card-group .left-1 .card{
+    padding-top: 25px;
+    padding-bottom: 35px
+}
+
+.main .mi-buy .card-group .left-1 .card > *{
+    padding-top: 20px
+}
+
+.main .mi-buy  .left-1 .card .session{
+    font-size: 14px;
+} 
+
+.main .mi-buy  .left-1 .card span{
+    color: #685751
+}
+
+.main .mi-buy .left-1 .card .box{
+    padding: 3px;
+    background-color: #685751;
+    color: white
+}
+
+.main .mi-buy .left-1 .card{
+    background-color: #f1eded; 
+    border-top: 1px solid #e53935
+}
+
+.main .mi-buy .word{
+ color:rgba(0,0,0,.5);
+}
+
+.main .mi-buy .left-2 .card{
+    margin-left: 10px;
+    background-color: rgba(0,0,0,.02); 
+    border-top: 1px solid #e53935;
+    font-size: 10px;
+}
+
+.main .mi-buy .left-2 img{
+    height: 160px;
+}
+
+.main .mi-buy .left-2 .card > *{
+    padding-top: 5px
+}
+
+.main .mi-buy .left-2 .price span:first-child{
+    color: #e53935;
+    font-size: 12px;
+    font-weight: bold
+}
+
+.main .mi-buy .left-2 .price span:last-child{
+    text-decoration: line-through;
+    color:#757575
 }
 
 </style>
@@ -478,7 +541,7 @@ a{
                         <div class="col col-8 one">
                             <a href="#">
                                 <i class="czs-github"></i>
-                                 米粉卡
+                                米粉卡
                             </a>
                         </div>
                         <div class="col col-8 one">
@@ -498,18 +561,19 @@ a{
                 <div class="col col-19 card-group">
                     <div class="col col-8">
                         <a class="card" href="#"> <img src="https://i1.mifile.cn/a4/xmad_15382347809011_iElHK.jpg" alt=""></a>
-                     </div>
-                     <div class="col col-8">
-                         <a class="card" href="#"><img src="https://i1.mifile.cn/a4/xmad_15382348153503_PhHON.jpg" alt=""></a>
-                     </div>
-                     <div class="col col-8">
-                         <a class="card" href="#"><img src="https://i1.mifile.cn/a4/df7c6d47-c09f-49d1-9a9f-df0d2294bec8" alt=""></a>
-                </div>
+                    </div>
+                    <div class="col col-8">
+                        <a class="card" href="#"><img src="https://i1.mifile.cn/a4/xmad_15382348153503_PhHON.jpg" alt=""></a>
+                    </div>
+                    <div class="col col-8">
+                        <a class="card" href="#"><img src="https://i1.mifile.cn/a4/df7c6d47-c09f-49d1-9a9f-df0d2294bec8"
+                                alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="main">
         <div class="container">
             <div class="row mi-buy">
@@ -521,70 +585,92 @@ a{
                     </div>
                 </div>
                 <div class="row card-group">
-                    <div class="col col-5-5">
-                        <div class="session">18:00场</div>
-                        <img src="" alt="">
-                        <div class="word">距离开始还有</div>
-                        <div class="row time">
-                            <div class="col box">02</div>
-                            <div class="col dosh">：</div>
-                            <div class="col box">33</div>
-                            <div class="col dosh">：</div>
-                            <div class="col box">38</div>
+                    <div class="left-1">
+                        <div class="col col-5-5 card">
+                            <div class="session">18:00 场</div>
+                            <img src="https://i1.mifile.cn/f/i/2018/mihome/flashpurchase.png" alt="">
+                            <div class="word">距离开始还有</div>
+                            <div class="row time">
+                                <span class="box">00</span>
+                                <span>:</span>
+                                <span class="box">13</span>
+                                <span>:</span>
+                                <span class="box">26</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col col-5-5">
-                        <div class="picture"></div>
-                        <div class="title">
-                            <div class="big-title">最生活毛巾*Ai（十条装）白色</div>
-                            <div class="small-title">超值家庭装 轻柔速干</div>
+                    <div class="left-2">
+                        <div class="col col-5-5">
+                            <div class="card">
+                                <div class="picture">
+                                    <img src="https://i8.mifile.cn/a1/pms_1528772894.53021526.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <div class="big-title">米家转换器 白色 通</div>
+                                    <div class="word">无线转换 让传统墙插变</div>
+                                </div>
+                                <div class="price">
+                                    <span>1元</span>
+                                    <span>19.9元</span>
+                                </div>
+                                <div class="on-sale">1元秒杀</div>
+                            </div>
                         </div>
-                        <div class="price">
-                            <span>69元</span>
-                            <span>169元</span>
+                        <div class="col col-5-5">
+                            <div class="card">
+                                <div class="picture">
+                                    <img src="https://i8.mifile.cn/v1/a1/f6de48c7-bf5b-8063-77d7-2b0b0b6ea3d5.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <div class="big-title">小米WIFI放大器 2 白色</div>
+                                    <div class="word">速率翻倍，覆盖无忧</div>
+                                </div>
+                                <div class="price">
+                                    <span>1元</span>
+                                    <span>49元</span>
+                                </div>
+                                <div class="on-sale">立减100元</div>
+                            </div>
                         </div>
-                        <div class="on-sale">立减100元</div>
-                    </div>
-                    <div class="col col-5-5">
-                        <div class="picture"></div>
-                        <div class="title">
-                            <div class="big-title">最生活毛巾*Ai（十条装）白色</div>
-                            <div class="small-title">超值家庭装 轻柔速干</div>
+                        <div class="col col-5-5">
+                            <div class="card">
+                                <div class="picture">
+                                    <img src="https://i8.mifile.cn/v1/a1/8fc81277-368b-2435-93dc-87ced43b0cf6.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <div class="big-title">米加随身风扇 蓝色</div>
+                                    <div class="word">能放在口袋的小风扇</div>
+                                </div>
+                                <div class="price">
+                                    <span>1元</span>
+                                    <span>19.9元</span>
+                                </div>
+                                <div class="on-sale">1元秒杀</div>
+                            </div>
                         </div>
-                        <div class="price">
-                            <span>69元</span>
-                            <span>169元</span>
-                        </div>
-                    </div>
-                    <div class="col col-5-5">
-                        <div class="picture"></div>
-                        <div class="title">
-                            <div class="big-title">最生活毛巾*Ai（十条装）白色</div>
-                            <div class="small-title">超值家庭装 轻柔速干</div>
-                        </div>
-                        <div class="price">
-                            <span>69元</span>
-                            <span>169元</span>
-                        </div>
-                    </div>
-                    <div class="col col-5-5">
-                        <div class="picture"></div>
-                        <div class="title">
-                            <div class="big-title">最生活毛巾*Ai（十条装）白色</div>
-                            <div class="small-title">超值家庭装 轻柔速干</div>
-                        </div>
-                        <div class="price">
-                            <span>69元</span>
-                            <span>169元</span>
+                        <div class="col col-5-5">
+                            <div class="card">
+                                <div class="picture">
+                                    <img src="https://i8.mifile.cn/a1/pms_1529921709.81212951.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <div class="big-title">小米手环3腕带 深空蓝</div>
+                                    <div class="word">顺滑柔软 触感舒适</div>
+                                </div>
+                                <div class="price">
+                                    <span>16.9元</span>
+                                    <span>19.9元</span>
+                                </div>
+                                <div class="on-sale">立减100元</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="row phone"></div>
+                <div class="row appliance"></div>
             </div>
-            <div class="row phone"></div>
-            <div class="row appliance"></div>
         </div>
-    </div>
-    <div class="footer"></div>
+        <div class="footer"></div>
 </body>
 
 </html>
