@@ -155,7 +155,8 @@ a{
     height: 120px;
 }
 
-.phone-advertising{
+.phone-advertising,
+.tv-advertising{
     background-image: url(https://i1.mifile.cn/a4/xmad_15283599920813_VWpSg.jpg);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -163,6 +164,10 @@ a{
     background-position: center ;
     background-repeat: no-repeat;
     height: 120px;
+}
+
+.tv-advertising{
+    background-image: url(https://i1.mifile.cn/a4/xmad_15393230912983_uwELN.jpg)
 }
 
 .global.nav{
@@ -431,7 +436,7 @@ a{
     position: relative;
 }
 
-.main  .left-2 img{
+.main  .left-2 .card .picture img{
     height: 160px;
     padding-top: 30px
 }
@@ -459,8 +464,9 @@ a{
     padding-top: 0;
 }
 
-.main .phone{
+.main .bg-color{
     background-color:#f5f5f5;
+    padding-bottom: 35px
 }
 
 .phone .head{
@@ -493,7 +499,8 @@ a{
     margin-bottom: 30px;
 }
 
-.main .phone .left-2 .card{
+.main .phone .left-2 .card,
+.main .appliances .left-2 .card{
     background: #fff;
 }
 
@@ -504,6 +511,56 @@ a{
 .main .card-group a{
     display: block;
 }
+
+.main .appliances .head{
+    margin-bottom: 20px
+}
+
+.main .appliances .head .right a{
+    margin-left: 10px;
+    font-size: 14px
+}
+
+.main .appliances .head .right a:hover{
+    border-bottom:solid #ff6700 1px;
+    color: #ff6700
+}
+
+.main .appliances .left-2 .price{
+    color: red;
+}
+
+.main .appliances .first {
+    margin-bottom: 10px
+}
+
+
+
+.main .appliances .card{
+    margin-left: 10px;
+    padding-bottom: 44.92px;
+}
+
+.main .appliances .small-card-picture img{
+    height: 134px;
+
+}
+
+.main .appliances .small-card .title,
+.main .appliances .small-card-1 .title{
+    padding-top: 45px ;
+}
+
+.main .appliances .left-2 .small-card-1{
+    margin-bottom: 10px;
+}
+
+.main .appliances .small-card ,
+.main .appliances .small-card-1{
+    background-color: #fff;
+    margin-left: 10px
+}
+
 
 
 
@@ -746,163 +803,311 @@ a{
                 <div class="phone-advertising"></div>
             </div>
         </div>
-        <div class="row phone">
-            <div class="container">
-                <div class="row head">
-                    <div class="col title">手机</div>
-                    <div class="right">
-                        <a href="#">查看全部<i class="czs-angle-right-l"> </i></a>
-                    </div>
-                </div>
-                <div class="row card-group">
-                    <div class="col col-2-0 left-1">
-                        <div class=" card">
-                            <a href="#" class="picture">
-                                <img src="https://i1.mifile.cn/a4/xmad_15323220713837_GLBVX.jpg" alt="">
-                            </a>
+        <div class="bg-color">
+            <div class="row phone">
+                <div class="container">
+                    <div class="row head">
+                        <div class="col title">手机</div>
+                        <div class="right">
+                            <a href="#">查看全部<i class="czs-angle-right-l"> </i></a>
                         </div>
                     </div>
-                    <div class=" col col-8-0 left-2">
-                        <div class=" row  top">
-                            <div class="col col-2-5">
-                                <a href="#" class="card">
-                                    <div class="picture">
-                                        <img src="https://i1.mifile.cn/a1/pms_1537323963.1278763!220x220.jpg" alt="">
-                                    </div>
-                                    <div class="title">
-                                        <div class="big-title">小米6 青春版 4GB+64GB</div>
-                                        <div class="word">潮流镜面渐变色，2400万</div>
-                                    </div>
-                                    <div class="price">
-                                        <span>1399元</span>
-                                        <span>1499元</span>
-                                    </div>
-                                    <div class="on-sale">新品推出</div>
-                                </a>
-                            </div>
-                            <div class="col col-2-5">
-                                <a href="#" class="card">
-                                    <div class="picture">
-                                        <img src="https://i1.mifile.cn/a1/pms_1537356460.6227958!220x220.png" alt="">
-                                    </div>
-                                    <div class="title">
-                                        <div class="big-title">小米8 屏幕指纹版 8GB+12GB</div>
-                                        <div class="word">全球首款压感屏幕指纹</div>
-                                    </div>
-                                    <div class="price">
-                                        <span>3599元</span>
-                                        <span>3699元</span>
-                                    </div>
-                                    <div class="on-sale">新品推出</div>
-                                </a>
-                            </div>
-                            <div class="col col-2-5">
-                                <a href="#" class="card">
-                                    <div class="picture">
-                                        <img src="https://i1.mifile.cn/a1/pms_1527684990.93616987!220x220.jpg" alt="">
-                                    </div>
-                                    <div class="title">
-                                        <div class="big-title">小米 MIX 2S 8GB+256GB</div>
-                                        <div class="word">骁龙845 年度旗舰处理器 艺术品般</div>
-                                    </div>
-                                    <div class="price">
-                                        <span>1699 元</span>
-                                        <span>1799元</span>
-                                    </div>
-                                    <div class="on-sale">减100元</div>
-                                </a>
-                            </div>
-                            <div class="col col-2-5">
-                                <a href="#" class="card">
-                                    <div class="picture">
-                                        <img src="https://i1.mifile.cn/a1/pms_1522034061.12391230!220x220.jpg" alt="">
-                                    </div>
-                                    <div class="title">
-                                        <div class="big-title">小米8 SE 4GB+64GB</div>
-                                        <div class="word">顺滑柔软 触感舒适</div>
-                                    </div>
-                                    <div class="price">
-                                        <span>1699 元</span>
-                                        <span>1799元</span>
-                                    </div>
-                                    <div class="on-sale">立减100元</div>
+                    <div class="row card-group">
+                        <div class="col col-2-0 left-1">
+                            <div class=" card">
+                                <a href="#" class="picture">
+                                    <img src="https://i1.mifile.cn/a4/xmad_15323220713837_GLBVX.jpg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class=" row bottom">
-                            <div class="col col-2-5">
-                                <a href="#" class="card">
-                                    <div class="picture">
-                                        <img src="https://i1.mifile.cn/a1/pms_1527144859.25489991!220x220.jpg" alt="">
-                                    </div>
-                                    <div class="title">
-                                        <div class="big-title">小米6x 4GB+32GB</div>
-                                        <div class="word">全索尼相机，骁龙660 AI处理器</div>
-                                    </div>
-                                    <div class="price">
-                                        <span>1199元</span>
-                                        <span>1499元</span>
-                                    </div>
-
-                                </a>
+                        <div class=" col col-8-0 left-2">
+                            <div class=" row  top">
+                                <div class="col col-2-5">
+                                    <a href="#" class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1537323963.1278763!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米6 青春版 4GB+64GB</div>
+                                            <div class="word">潮流镜面渐变色，2400万</div>
+                                        </div>
+                                        <div class="price">
+                                            <span>1399元</span>
+                                            <span>1499元</span>
+                                        </div>
+                                        <div class="on-sale">新品推出</div>
+                                    </a>
+                                </div>
+                                <div class="col col-2-5">
+                                    <a href="#" class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1537356460.6227958!220x220.png" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米8 屏幕指纹版 8GB+12GB</div>
+                                            <div class="word">全球首款压感屏幕指纹</div>
+                                        </div>
+                                        <div class="price">
+                                            <span>3599元</span>
+                                            <span>3699元</span>
+                                        </div>
+                                        <div class="on-sale">新品推出</div>
+                                    </a>
+                                </div>
+                                <div class="col col-2-5">
+                                    <a href="#" class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1527684990.93616987!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米 MIX 2S 8GB+256GB</div>
+                                            <div class="word">骁龙845 年度旗舰处理器 艺术品般</div>
+                                        </div>
+                                        <div class="price">
+                                            <span>1699 元</span>
+                                            <span>1799元</span>
+                                        </div>
+                                        <div class="on-sale">减100元</div>
+                                    </a>
+                                </div>
+                                <div class="col col-2-5">
+                                    <a href="#" class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1522034061.12391230!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米8 SE 4GB+64GB</div>
+                                            <div class="word">顺滑柔软 触感舒适</div>
+                                        </div>
+                                        <div class="price">
+                                            <span>1699 元</span>
+                                            <span>1799元</span>
+                                        </div>
+                                        <div class="on-sale">立减100元</div>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="col col-2-5">
-                                <a href="#" class="card">
-                                    <div class="picture">
-                                        <img src="https://i1.mifile.cn/a1/pms_1495692033.10494295!220x220.jpg" alt="">
-                                    </div>
-                                    <div class="title">
-                                        <div class="big-title">小米Max 2 4GB+64GB</div>
-                                        <div class="word">6.44大屏，5300mAh充电宝级的</div>
-                                    </div>
-                                    <div class="price">
-                                        <span>1699元</span>
-                                        <span>1699元</span>
-                                    </div>
+                            <div class=" row bottom">
+                                <div class="col col-2-5">
+                                    <a href="#" class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1527144859.25489991!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米6x 4GB+32GB</div>
+                                            <div class="word">全索尼相机，骁龙660 AI处理器</div>
+                                        </div>
+                                        <div class="price">
+                                            <span>1199元</span>
+                                            <span>1499元</span>
+                                        </div>
 
-                                </a>
-                            </div>
-                            <div class="col col-2-5">
-                                <a href="#" class="card">
-                                    <div class="picture">
-                                        <img src="https://i1.mifile.cn/a1/pms_1509723483.31416776!220x220.jpg" alt="">
-                                    </div>
-                                    <div class="title">
-                                        <div class="big-title">小米MIX 2 全陶瓷尊享版</div>
-                                        <div class="word">全面屏2.0，全陶瓷</div>
-                                    </div>
-                                    <div class="price">
-                                        <span>2699元</span>
-                                        <span>2699元</span>
-                                    </div>
+                                    </a>
+                                </div>
+                                <div class="col col-2-5">
+                                    <a href="#" class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1495692033.10494295!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米Max 2 4GB+64GB</div>
+                                            <div class="word">6.44大屏，5300mAh充电宝级的</div>
+                                        </div>
+                                        <div class="price">
+                                            <span>1699元</span>
+                                            <span>1699元</span>
+                                        </div>
 
-                                </a>
-                            </div>
-                            <div class="col col-2-5">
-                                <a href="#" class="card">
-                                    <div class="picture">
-                                        <img src="https://i1.mifile.cn/a1/pms_1525853341.8312102!220x220.jpg" alt="">
-                                    </div>
-                                    <div class="title">
-                                        <div class="big-title">红米S2 3BG+32GB</div>
-                                        <div class="word">全职1600万超大像素只能美拍</div>
-                                    </div>
-                                    <div class="price">
-                                        <span>999元</span>
-                                        <span>999元</span>
-                                    </div>
+                                    </a>
+                                </div>
+                                <div class="col col-2-5">
+                                    <a href="#" class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1509723483.31416776!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米MIX 2 全陶瓷尊享版</div>
+                                            <div class="word">全面屏2.0，全陶瓷</div>
+                                        </div>
+                                        <div class="price">
+                                            <span>2699元</span>
+                                            <span>2699元</span>
+                                        </div>
 
-                                </a>
+                                    </a>
+                                </div>
+                                <div class="col col-2-5">
+                                    <a href="#" class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1525853341.8312102!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">红米S2 3BG+32GB</div>
+                                            <div class="word">全职1600万超大像素只能美拍</div>
+                                        </div>
+                                        <div class="price">
+                                            <span>999元</span>
+                                            <span>999元</span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-
                     </div>
-
+                    <div class="tv-advertising"></div>
 
                 </div>
 
             </div>
+            <div class="row Home appliances">
+                <div class="container">
+                    <div class="row head">
+                        <div class="col title">家电</div>
+                        <div class="right">
+                            <a href="#">热门</a>
+                            <a href="#">电影影音</a>
+                            <a href="#">电脑</a>
+                            <a href="#">家居</a>
+                        </div>
+                    </div>
+                    <div class="row card-group">
+                        <div class="row first">
+                            <div class="col col-2-0 left-1">
+                                <img src="https://i1.mifile.cn/a4/xmad_15232433421155_vCzhJ.jpg" alt="">
+                            </div>
+                            <div class="col col-8-0 left-2">
+                                <div class="col col-2-5 ">
+                                    <div class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1524883847.49276938!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米电视4A 43英寸青春版</div>
+                                            <div class="word">人工智能语音</div>
+                                        </div>
+                                        <div class="price">1499元</div>
+                                    </div>
+                                </div>
+                                <div class="col col-2-5">
+                                    <div class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1524883847.49276938!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米电视4A 43英寸青春版</div>
+                                            <div class="word">人工智能语音</div>
+                                        </div>
+                                        <div class="price">1499元</div>
+                                    </div>
+                                </div>
+                                <div class="col col-2-5">
+                                    <div class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1524883847.49276938!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米电视4A 43英寸青春版</div>
+                                            <div class="word">人工智能语音</div>
+                                        </div>
+                                        <div class="price">1499元</div>
+                                    </div>
+                                </div>
+                                <div class="col col-2-5">
+                                    <div class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1524883847.49276938!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米电视4A 43英寸青春版</div>
+                                            <div class="word">人工智能语音</div>
+                                        </div>
+                                        <div class="price">1499元</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row second">
+                            <div class="col col-2-0 left-1">
+                                <img src="https://i1.mifile.cn/a4/xmad_15232433421155_vCzhJ.jpg" alt="">
+                            </div>
+                            <div class="col col-8-0 left-2">
+                                <div class="col col-2-5 ">
+                                    <div class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1524883847.49276938!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米电视4A 43英寸青春版</div>
+                                            <div class="word">人工智能语音</div>
+                                        </div>
+                                        <div class="price">1499元</div>
+                                    </div>
+                                </div>
+                                <div class="col col-2-5">
+                                    <div class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1524883847.49276938!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米电视4A 43英寸青春版</div>
+                                            <div class="word">人工智能语音</div>
+                                        </div>
+                                        <div class="price">1499元</div>
+                                    </div>
+                                </div>
+                                <div class="col col-2-5">
+                                    <div class="card">
+                                        <div class="picture">
+                                            <img src="https://i1.mifile.cn/a1/pms_1524883847.49276938!220x220.jpg" alt="">
+                                        </div>
+                                        <div class="title">
+                                            <div class="big-title">小米电视4A 43英寸青春版</div>
+                                            <div class="word">人工智能语音</div>
+                                        </div>
+                                        <div class="price">1499元</div>
+                                    </div>
+                                </div>
+                                <div class="col col-2-5">
+                                   
+                                        <div class="row small-card-1">
+                                            <div class="col col-10">
+                                                <div class="title">
+                                                        <div class="big-title">小米净水器</div>
+                                                        <div class="price">1999元</div>
+                                                </div>
+                                            </div>
+                                            <div class="col col-14">
+                                                <div class="small-card-picture">
+                                                    <img src="https://i1.mifile.cn/a1/pms_1521634907.16181074!220x220.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row small-card">
+                                            <div class="col col-10">
+                                                <div class="title">
+                                                        <div class="big-title">浏览更多</div>
+                                                        <div class="price">热门</div>
+                                                </div>
+                                               
+                                            </div>
+                                            <div class="col col-14">
+                                                <div class="small-card-picture">
+                                                    <img src="https://i1.mifile.cn/a1/pms_1521634907.16181074!220x220.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </div>
+    </div>
+
 
     </div>
     <div class="footer"></div>
