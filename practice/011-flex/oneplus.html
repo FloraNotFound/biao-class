@@ -1,0 +1,493 @@
+<style>
+    body {
+        margin: 0;
+        font-size: 14px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    .left {
+        float: left
+    }
+
+    .row::after,
+    .row::before {
+        clear: both;
+        display: block;
+        content: '';
+
+    }
+
+    .right {
+        float: right
+    }
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    button {
+        outline: none;
+
+    }
+
+    .container {
+        max-width: 1180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+
+    .nav a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .logo a i {
+        font-size: 25px;
+        color: #eb0028;
+    }
+
+
+
+    .nav .link-group a {
+        padding-left: 15px;
+        padding-right: 15px;
+        color: rgba(0, 0, 0, .5);
+        border: 1px solid #fff;
+    }
+
+    .nav .link-group a:hover {
+        color: #eb0028;
+        border-bottom: 1px solid #eb0028;
+    }
+
+
+    .nav .icon a {
+        color: #828282;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 17px
+    }
+
+    .nav .icon a:hover {
+
+        border-bottom: 1px solid black;
+        color: black
+    }
+
+    .carousel {
+        background-image: url(https://image01.oneplus.cn/shop/201806/01/749/31cdecff25e1ae5d9af388070f18926c.jpg);
+        max-width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat
+    }
+
+    .carousel .content {
+        padding-bottom: 280px;
+        padding-top: 280px;
+        padding-left: 900px;
+        color: #fff;
+    }
+
+    .carousel .content>* {
+        padding-top: 10px
+    }
+
+    .carousel .content button {
+        background-color: transparent;
+        color: #fff;
+        padding: 10px 15px;
+    }
+
+    .picture-group {
+        display: flex;
+    }
+
+    .picture-group .picture {
+        flex-grow: 1
+    }
+
+    .join {
+        background-image: url(https://image01.oneplus.cn/shop/201809/26/880/8070f60cb10b64a0bcf03d98242947ca.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .join .content {
+        padding-top: 250px;
+        padding-bottom: 250px;
+        text-align: center
+    }
+
+    .join .content .title {
+        padding-bottom: 20px;
+        font-size: 50px;
+        font-weight: 300;
+        color: #fff
+    }
+
+
+    .join .content button {
+        background-color: transparent;
+        border-color: #fff;
+        padding: 12px 30px;
+        color: rgba(255, 255, 255, .5);
+        font-size: 15px;
+        border-radius: 3px
+    }
+
+    .join .content button:hover {
+        background-color: #fff;
+        color: #828282;
+    }
+
+    .card-group {
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background: #f6f6f6;
+    }
+
+    .card-group .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card-group .container .card>* {
+        padding-bottom: 30px
+    }
+
+    .card-group .container .card .title>* {
+        padding-bottom: 10px
+    }
+
+    .card-group .card {
+        width: 32%;
+        background: #fff;
+        color: black
+    }
+
+    .card-group a:hover {
+        box-shadow: 0 15px 40px 0 rgba(0, 0, 0, .2);
+    }
+
+    .card-group .card .title {
+        padding-left: 20px
+    }
+
+    .service {
+        border-bottom: rgba(0, 0, 0, .1) 1px solid;
+        background-color: #fff
+    }
+
+    .service .container {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 50px;
+        padding-top: 50px
+    }
+
+    .service .picture {
+        font-size: 50px;
+        text-align: center;
+        padding-bottom: 18px;
+        color: green;
+    }
+
+    .service .word {
+        color: rgba(0, 0, 0, .5)
+    }
+
+    .choice {
+        color: rgba(0, 0, 0, .6);
+        padding-bottom: 50px;
+        padding-top: 50px;
+        background-color: #fcfcfc
+    }
+
+    .choice .left {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .choice .left a {
+        display: block;
+        padding-bottom: 10px;
+        color: rgba(0, 0, 0, .4);
+    }
+
+    .choice .left .title {
+        padding-bottom: 15px;
+        color: rgba(0, 0, 0, .6);
+        font-size: 16px
+    }
+
+    .choice .right {
+        width: 30%;
+        text-align: center;
+    }
+
+    .choice .right>* {
+        padding-bottom: 10px
+    }
+
+    .choice .right .icon i:first-child {
+        padding-right: 9px;
+    }
+
+    .information {
+        padding-top: 30px;
+        padding-bottom: 50px
+    }
+
+    .information .record img {
+        max-width: 80%;
+    }
+
+    .information .cn {
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+        color: rgba(0, 0, 0, .6)
+    }
+
+    .information .cn .right a {
+        font-size: 10px;
+        color: rgba(0, 0, 0, .6);
+        padding-left: 5px;
+        padding-right: 5px
+    }
+
+    .information .cn .right a::after {
+        content: '|';
+        display: inline-block;
+        position: relative;
+        top: 0px;
+        right: -6px;
+        width: 1px;
+        height: 1em;
+    }
+
+    .information .cn .right a:last-of-type:after {
+        display: none
+    }
+
+    .record {
+        padding-top: 30px;
+        color: rgba(0, 0, 0, .4);
+
+    }
+
+    .record .left .top {
+        padding-bottom: 8px;
+        font-size: 8px;
+    }
+
+    .record .left a {
+        color: rgba(0, 0, 0, .4);
+    }
+</style>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="../caomei1.2.8/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <a href="#"><i class="czs-gift-l"></i></a>
+                </div>
+                <div class="link-group">
+                    <a href="#">OnePlus 6</a>
+                    <a href="#">商城</a>
+                    <a href="#">服务</a>
+                    <a href="#">品牌</a>
+                    <a href="#">论坛</a>
+                </div>
+                <div class="icon">
+                    <a href="#"><i class="czs-user"></i></a>
+                    <a href="#"><i class="czs-shopping-cart"></i></a>
+                    <a href="#"><i class="czs-search-l"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="carousel">
+            <div class="row content">
+                <div class="row-small">OnePlus 6</div>
+                <div class="row-big">全速旗舰</div>
+                <div class="row-price">¥3199起</div>
+                <div class="button">
+                    <button>立即预约</button>
+                </div>
+                <div class="more">了解更多</div>
+            </div>
+        </div>
+        <div class="picture-group">
+            <div class="picture">
+                <img src="https://image01.oneplus.cn/shop/201808/27/982/6966b85e5aa37e6d3e11d65d23e3bca4.jpg" alt="">
+            </div>
+            <div class="picture">
+                <img src="https://image01.oneplus.cn/shop/201810/09/1371/055b121c2259c388bfe7f5d767f916c0.jpg" alt="">
+            </div>
+            <div class="picture">
+                <img src="https://image01.oneplus.cn/shop/201711/27/1144/04788510f69288329e75c754eff3fa00.jpg" alt="">
+            </div>
+        </div>
+        <div class="join">
+            <div class="content">
+                <div class="title">Shot on OnePlus</div>
+                <button>我要参加</button>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="container">
+                <a href="#" class="card">
+                    <div class="picture"><img src="https://image01.oneplus.cn/shop/201810/11/177/1ff19e3121bff3083812e050fa7b8ac5.jpg"
+                            alt=""></div>
+                    <div class="title">
+                        <div class="big">博客</div>
+                        <div class="small">
+                            <span>OnePlus 6 Android 9.0</span>
+                            <span>正式版现已推送</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="picture"><img src="https://image01.oneplus.cn/shop/201810/11/177/1ff19e3121bff3083812e050fa7b8ac5.jpg"
+                            alt=""></div>
+                    <div class="title">
+                        <div class="big">博客</div>
+                        <div class="small">
+                            <span>OnePlus 6 Android 9.0</span>
+                            <span>正式版现已推送</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="card">
+                    <div class="picture"><img src="https://image01.oneplus.cn/shop/201810/11/177/1ff19e3121bff3083812e050fa7b8ac5.jpg"
+                            alt=""></div>
+                    <div class="title">
+                        <div class="big">博客</div>
+                        <div class="small">
+                            <span>OnePlus 6 Android 9.0</span>
+                            <span>正式版现已推送</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="service">
+            <div class="container">
+                <a href="#" class="item">
+                    <div class="picture"><i class="czs-linux"></i></div>
+                    <div class="word">7天无理由退款</div>
+                </a>
+                <a href="#" class="item">
+                    <div class="picture"><i class="czs-linux"></i></div>
+                    <div class="word">7天无理由退款</div>
+                </a>
+                <a href="#" class="item">
+                    <div class="picture"><i class="czs-linux"></i></div>
+                    <div class="word">7天无理由退款</div>
+                </a>
+                <a href="#" class="item">
+                    <div class="picture"><i class="czs-linux"></i></div>
+                    <div class="word">7天无理由退款</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row choice">
+            <div class=" row container">
+
+                <div class=" left">
+                    <div class="item">
+                        <div class="title">一加产品</div>
+                        <div class="link">
+                            <a href="#">OnePlus 6</a>
+                            <a href="#">OnePlus 5T</a>
+                            <a href="#">OnePlus 5</a>
+                            <a href="#">OnePlus 3T</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title">一加产品</div>
+                        <div class="link">
+                            <a href="#">OnePlus 6</a>
+                            <a href="#">OnePlus 5T</a>
+                            <a href="#">OnePlus 5</a>
+                            <a href="#">OnePlus 3T</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title">一加产品</div>
+                        <div class="link">
+                            <a href="#">OnePlus 6</a>
+                            <a href="#">OnePlus 5T</a>
+                            <a href="#">OnePlus 5</a>
+                            <a href="#">OnePlus 3T</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title">一加产品</div>
+                        <div class="link">
+                            <a href="#">OnePlus 6</a>
+                            <a href="#">OnePlus 5T</a>
+                            <a href="#">OnePlus 5</a>
+                            <a href="#">OnePlus 3T</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" right">
+                    <div class="phone"><i class="czs-mobile"></i>400-888-1111</div>
+                    <div class="button"><button>在线客服</button></div>
+                    <div class="time">周一至周日 <span>9:00-22：00</span></div>
+                    <div class="icon"><i class="czs-weixin"></i><i class="czs-weibo"></i></div>
+                </div>
+
+            </div>
+        </div>
+        <div class=" information">
+            <div class="row container">
+                <div class="row cn">
+                    <div class="left">中国（简体中文/CNY）</div>
+                    <div class="right">
+                        <a href="#">隐私政策</a>
+                        <a href="#">用户协议</a>
+                        <a href="#">安全问题反馈</a>
+                    </div>
+                </div>
+                <div class="row record">
+                    <div class="left">
+                        <div class="top">© 2013-2018 OnePlus. All Rights Reserved. (粤ICP备13080605号-4)</div>
+                        <div class="bottom"><a href="#"><img src="https://statics.oneplus.cn/ov/assets/images/footer/badge.png"
+                                    alt="">粤公网安备 40030403001407</a></div>
+                    </div>
+                    <div class="right">
+                        <img src="https://statics.oneplus.cn/ov/assets/images/footer/cnnic.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
