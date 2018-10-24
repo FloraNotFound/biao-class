@@ -163,3 +163,15 @@
 .skills .introduce{
     padding-bottom: 25px
 }
+
+.evaluate{
+    background-image: url(../bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ddd;
+    line-height: 1.7
+}
+
+.evaluate .me{
+    text-align: center
+}
