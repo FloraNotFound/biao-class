@@ -1,0 +1,165 @@
+.header{
+    background-image: url(../first-screen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ .header .am{
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+ }
+
+ .header .am .title{
+     font-size: 70px;
+     font-weight: 700;
+     color: #fff
+ }
+
+ .header .am .title span{
+     color: #F4D03F;
+ }
+
+ .header .am .word{
+     font-size: 20px;
+     color: #fff;
+     letter-spacing: 8px
+ }
+
+ .header .am .button{
+     margin-top:80px;
+     font-size: 50px;
+     font-weight: 800;
+     color: #F4D03F;
+     
+ }
+
+ .header .am .button i{
+    color: #F4D03F;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #F4D03F
+ }
+
+ .header .am .button i:hover{
+     background: rgba(255, 255, 255, .3)
+ }
+
+ .main>*{
+     padding-top: 60px;
+     padding-bottom: 80px
+ }
+
+.main .title{
+    padding-bottom: 40px;
+    font-size: 30px;
+    text-align: center
+}
+
+ .main .data {
+     background: #6f7275;
+ }
+
+ .main .data .title{
+     color: #ddd;
+ }
+
+ .main .data .word{
+     padding-bottom: 4px;
+     color: #F4D03F;
+     font-size: 16px
+ }
+
+ .main .data .item{
+     color: #aaa;
+     font-size: 12px
+ }
+
+ .main .data .container>*{
+     text-align: center;
+ }
+
+ .main .data .container .contect{
+     display: flex;
+     justify-content: space-between;
+     align-items: center
+ }
+
+ .main .data .container .picture{
+     padding-bottom: 30px;
+ }
+
+ .main .data .container .picture span{
+    padding: 5px 17px;
+    border-radius: 25%;
+     font-size: 60px;
+     color: #aaa;
+     background-color:#474b4f ;
+     display: inline-block;
+     
+     
+ }
+
+ .main .data .container .picture span:hover,
+ .works .picture-group a:hover{
+    transform: scale(1.1);
+    transition: all 0.6s;
+ }
+
+ .main .data .container .picture i:hover{
+     color: #F4D03F;
+}
+
+
+.picture-group .top,.picture-group{
+     display: block;        
+ }
+
+ .picture-group a{
+     color: black
+ }
+
+.picture-group .top,.picture-group .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.twenty-three{
+    flex-basis: 23%;
+    border: 2px solid rgba(0, 0, 0, .1)
+}
+
+.picture-group .top{
+    padding-bottom: 10px
+}
+
+.works .name{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+.skills{
+    background-color: #F4D03F;
+}
+
+.skills .contect{
+    display: flex;
+}
+
+.skills .title{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.skills .word{
+    padding-left: 50px
+}
+
+.skills .word {
+    font-size: 20px
+}
+
+.skills .introduce{
+    padding-bottom: 25px
+}
