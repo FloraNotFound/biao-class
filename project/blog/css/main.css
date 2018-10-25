@@ -1,5 +1,5 @@
 .header{
-    background-image: url(../first-screen.jpg);
+    background-image: url(../../blog/img/first-screen.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -143,7 +143,7 @@
     background-color: #F4D03F;
 }
 
-.skills .contect{
+.skills .content{
     display: flex;
 }
 
@@ -165,7 +165,7 @@
 }
 
 .evaluate{
-    background-image: url(../bg.jpeg);
+    background-image: url(../../blog/img/bg.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #ddd;
@@ -175,3 +175,67 @@
 .evaluate .me{
     text-align: center
 }
+
+.contact-way{
+    background-color:rgba(255, 255, 255, .2)
+}
+
+.contact-way .content{
+    display: flex;
+    justify-content: space-around;
+    text-align: center
+}
+
+.contact-way .content .item .picture{
+    padding-bottom: 20px;
+    font-size: 30px;
+    color: #F4D03F;
+}
+
+.contact-way .content .item .word{
+    font-size: 13px;
+    color: #333
+}
+
+.contact-way .content .item .word .one{
+    padding-bottom: 8px;
+}
+
+.contact-way .e-mail .title{
+    padding-top: 60px;
+    font-size: 20px;
+    color: #555
+}
+
+.form >*{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.form .row-1 input:first-child{
+    margin-right: 15px
+}
+
+.form .row-1 input{
+   padding: 6px 20px;  
+}
+
+.form .row-2 input{
+    padding:6px 260px 30px 6px
+}
+
+.form button{
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.form input:focus{
+    outline: 2px solid #666
+}
+
+.form button:hover{
+    background-color: #F4D03F;
+    color: #fff
+}
+

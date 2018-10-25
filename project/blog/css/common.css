@@ -19,6 +19,14 @@ img {
     max-width: 100%;
 }
 
+input,button{
+    outline: none;
+}
+
+button{
+    border: none
+}
+
 .container {
     max-width: 1080px;
     margin-left: auto;
