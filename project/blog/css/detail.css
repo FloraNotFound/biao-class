@@ -1,0 +1,45 @@
+.container{
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F4D03F
+}
+
+.header .nav{
+    text-align:center;
+    padding-bottom: 20px
+}
+
+.header .title{
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px
+}
+
+.header .nav a{
+    padding: 5px 10px;
+    color: #555
+}
+
+.header .nav a:hover{
+    background-color: #555;
+    color: aliceblue
+}
+
+.main .container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px
+}
+
+
+.content{
+    text-align: center;
+    background-color: rgba(255, 255, 255, .2)
+}
+
+.big-title{
+    font-size: 20px;
+    padding-bottom: 20px
+}
