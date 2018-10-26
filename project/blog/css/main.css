@@ -133,6 +133,121 @@
     padding-bottom: 10px
 }
 
+.article{
+    background-color: 
+}
+
+.main .article .content{
+    display: flex;
+}
+
+.article-nav{
+    text-align:center;
+    padding-bottom: 20px
+}
+
+.article .content .card > *{
+    padding-bottom: 8px
+}
+
+.article .content .card{
+    border: 1px solid rgba(0, 0, 0, .3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .1)
+}
+
+
+.article  .title{
+    padding-bottom: 20px;
+}
+
+.article-nav a{
+    padding: 5px 10px;
+    color: #555
+}
+
+.article-nav a:hover{
+    background-color: #555;
+    color: aliceblue
+}
+
+.article .all{
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.article .word{
+    font-size: 17px;
+    text-align: center;
+    color: black
+
+}
+
+.article .detail{
+    font-size: 14px;
+    color: #666;
+    
+}
+
+.article .link-group{
+    padding-left: 60px;
+    padding-right: 50px;
+}
+
+.article .link-group  .item{
+    margin-bottom: 38px;
+    padding:10px
+}
+
+.article .link-group  a:last-child{
+    margin-bottom: 0px
+}
+
+.article .link-group  a:hover{
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+.article .link-group  .item .big{
+    color: black;
+    font-size: 15px;
+    padding-bottom: 7px
+}
+
+.article .link-group  .item .small{
+    font-size: 14px;
+    color: #666
+}
+
+.article .link-group a{
+    display: block;
+}
+
+.article .link-group .item{
+    border: 1px solid rgba(0, 0, 0, .3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .1)
+}
+
+.article .button{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.article button{
+    padding: 6px 13px;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    margin-right: 20px;
+    border-radius: 3px
+}
+
+.article button:hover{
+    background-color: #999
+}
+
+.works{
+    background: #eee;
+}
+
 .works .name{
     text-align: center;
     padding-top: 15px;
