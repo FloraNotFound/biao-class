@@ -81,8 +81,6 @@
 
  .main .data .container .contect{
      display: flex;
-     justify-content: space-between;
-     align-items: center
  }
 
  .main .data .container .picture{
@@ -133,9 +131,6 @@
     padding-bottom: 10px
 }
 
-.article{
-    background-color: 
-}
 
 .main .article .content{
     display: flex;
@@ -366,4 +361,5 @@
     font-size: 20px;
     color: inherit
 }
+
 
