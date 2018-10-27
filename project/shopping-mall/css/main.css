@@ -1,0 +1,146 @@
+.header .global{
+    display: flex;
+    padding: 30px 0px
+}
+
+.header .global .col-10{
+    display: flex;
+    align-items: baseline
+}
+
+.header .global .word{
+    font-size: 30px;
+    color: #7a2843;   
+}
+
+.header .global .col-14{
+    text-align: right;
+}
+
+.header .global .link{
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.header .global .link a{
+    padding:6px 10px;
+    color: #545454;
+    font-size: 13px
+}
+
+.header .global .link a:hover{
+    color: #7a2843;
+}
+
+.header .global form input{
+    padding:10px 45px 10px 10px;
+    background-color: #f3f3f3;
+    font-size: 17px;
+}
+
+.header .global form input:hover,
+.header .global form .button:hover{
+    background-color: rgba(0, 0, 0, .1)
+}
+
+
+
+.header .global form .input a{
+    position: relative;
+    top: 3px;
+    left: -33px;
+    color: rgba(0, 0, 0, .5)
+}
+
+.header .global form .icon i{
+    padding-right: 5px;
+}
+
+
+.header .global form .button{
+    padding: 10px;
+    color: #545454;
+    background-color: #f3f3f3
+}
+
+.header .nav{
+    background-color: #7a2843;
+}
+
+.header .nav a{
+    padding:20px 10px;
+    color: #fff
+}
+
+.header .nav a:hover{
+    background: #fff;
+    color: #7a2843
+}
+
+.main{
+    background-color: #f3f3f3
+}
+
+
+.main .picture{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
+}
+
+.main .shopping .title{
+    padding-top: 40px;
+    padding-bottom: 20px;
+   
+}
+
+.main .shopping .title .left{
+    font-size: 26px;
+
+}
+
+.main .shopping .title .right{
+    font-size: 16px;
+    padding-top: 7px;   
+}
+
+.main .shopping .title >*{
+    color: #555
+}
+
+.main .shopping .title .right:hover{
+    color: #7a2843
+}
+
+.main .shopping .picture{
+    display: flex;
+}
+
+
+
+.main .shopping .picture .word{
+    color: #6a6969;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px
+}
+
+.main .shopping .picture a{
+    border: 2px solid #dedede;
+    box-shadow:0px  3px 10px rgba(0, 0, 0, .1)
+}
+
+.main .shopping .picture a:hover{
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+
+.main .shopping .picture a:first-child{
+    margin-right: 8.3333333333333333%
+}
+
+
+
+
+
+
