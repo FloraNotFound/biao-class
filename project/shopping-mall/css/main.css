@@ -198,7 +198,8 @@
 
 .footer a{
     font-size: 15px;
-    color: inherit
+    color: inherit;
+    padding:3px 6px
 }
 
 .footer a:hover{

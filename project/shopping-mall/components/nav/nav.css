@@ -1,0 +1,78 @@
+.header .global{
+    display: flex;
+    padding: 30px 0px
+}
+
+.header .global .col-10{
+    display: flex;
+    align-items: baseline
+}
+
+.header .global .word{
+    font-size: 30px;
+    color: #7a2843;   
+}
+
+.header .global .col-14{
+    text-align: right;
+}
+
+.header .global .link{
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.header .global .link a{
+    padding:6px 10px;
+    color: #545454;
+    font-size: 13px
+}
+
+.header .global .link a:hover{
+    color: #7a2843;
+}
+
+.header .global form input{
+    padding:10px 45px 10px 10px;
+    background-color: #f3f3f3;
+    font-size: 17px;
+}
+
+.header .global form input:hover,
+.header .global form .button:hover{
+    background-color: rgba(0, 0, 0, .1)
+}
+
+
+
+.header .global form .input a{
+    position: relative;
+    top: 3px;
+    left: -33px;
+    color: rgba(0, 0, 0, .5)
+}
+
+.header .global form .icon i{
+    padding-right: 5px;
+}
+
+
+.header .global form .button{
+    padding: 10px;
+    color: #545454;
+    background-color: #f3f3f3
+}
+
+.header .nav{
+    background-color: #7a2843;
+}
+
+.header .nav a{
+    padding:20px 10px;
+    color: #fff
+}
+
+.header .nav a:hover{
+    background: #fff;
+    color: #7a2843
+}
