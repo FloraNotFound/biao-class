@@ -82,33 +82,34 @@
 }
 
 
-.main .picture{
+.main .first-screen .picture,
+.main .shopping .picture{
     padding-top: 30px;
     padding-bottom: 60px;
     border-bottom: 1px solid rgba(0, 0, 0, .1)
 }
 
-.main .shopping .title{
+.main  .title{
     padding-top: 40px;
     padding-bottom: 20px;
    
 }
 
-.main .shopping .title .left{
+.main .title .left{
     font-size: 26px;
 
 }
 
-.main .shopping .title .right{
+.main  .title .right{
     font-size: 16px;
     padding-top: 7px;   
 }
 
-.main .shopping .title >*{
+.main  .title >*{
     color: #555
 }
 
-.main .shopping .title .right:hover{
+.main .title .right:hover{
     color: #7a2843
 }
 
@@ -139,6 +140,70 @@
     margin-right: 8.3333333333333333%
 }
 
+.main .selection .picture-group{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.twenty-three{
+    flex-basis: 23%
+}
+
+.main .selection .word{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #6a6969;
+    font-size: 15px;
+}
+
+.main .selection .price{
+    color: black;
+    font-weight: 400;
+    padding-bottom: 10px
+
+}
+
+.main .selection .card{
+    margin-bottom: 60px
+}
+
+.main .selection .card:hover{
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .5)
+}
+
+.main .selection .picture-group{
+     border-bottom: 1px solid rgba(0, 0, 0, .1)
+}
+
+.main .adver .title{
+    padding-bottom: 20px;
+}
+
+
+
+.main .adver .container,
+.main .other .container{
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding-bottom: 15px;
+    text-align: center
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #555
+}
+
+.footer a{
+    font-size: 15px;
+    color: inherit
+}
+
+.footer a:hover{
+    color: #7a2843
+}
 
 
 
