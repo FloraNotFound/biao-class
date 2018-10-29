@@ -1,6 +1,5 @@
 .main{
-    background-color: #f3f3f3;
-    color:#6a6969;
+    background-color: #f3f3f3
 }
 
 .main .container>*{
@@ -10,90 +9,81 @@
 .main .road{
     padding-top: 15px;
     padding-bottom: 15px;
+    color: #6a6969;
     font-size: 13px;
 }
 
-.main .road>*{
-    padding-right: 10px
+.main .road span{
+    padding-right: 10px;
 }
 
-.main .introduce{
-    padding-top: 40px;
-    padding-bottom: 20px;
+
+.main .content{
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
-.main .introduce .big-title{
-    font-size: 24px;
-    font-weight: 400;
+.content .col-14 .title{
+    font-size: 20px;
+    color:#2f2f2f;
+    padding-bottom: 10px;
+    padding-top: 25px
+
+}
+
+.content .col-14 .price{
+    font-size: 19px;
     color: #2f2f2f;
-    margin-bottom: 20px
+
 }
 
-.main .introduce .small-title{
-    font-size: 15px;
-}
-
-.main .card-group .title{
-    text-align: right;
+.content .col-14 .suggar{
     padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.content .col-14 .suggar .top{
+    color: #6a6969;
     font-size: 14px;
-    padding-bottom: 25px;
+    padding-bottom: 13px
 }
 
-.main .card-group .title span{
-    padding:3px;
+.content .col-14 .suggar .button button{
+    padding: 5px 13px;
+    margin-right: 10px;
+    border: 1px solid #dedede;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #6a6969;
+    margin-bottom: 15px
 }
 
-.main .card-group .title span:hover{
-    color: #7a2843
+.content .col-14 .suggar .button button:focus{
+    background-color: #7a2843;
+    color: #dedede;
+   
 }
 
-.twenty-three{
-    flex-basis: 23%
+.content .col-14 .suggar .shop button{
+    background-color: #7a2843;
+    color: #fff;
+    padding:9px 20px;
+    font-size: 16px;
+    font-weight: 300
 }
 
-.twenty-three>*{
-    padding-bottom: 10px
+.content .col-14 .suggar .shop button:hover{
+   background-color: #6a2843;
 }
 
-.twenty-three .word>*{
-    padding-bottom: 5px 
+.content .col-14 .suggar .shop button:active{
+    background-color: #5a2843;
+    outline: 2px solid #6a6969
 }
 
-/* .main .card-group .top,
-.main .card-group .bottom{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 15px
-} */
-
-.main .card {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-
-
-
-.main .card-group .name{
+.content .col-14 .introduce{
     color: #6a6969;
     font-size: 15px;
-}
-
-.main .card-group .price{
-    color: black
-}
-
-.main .card-group .card a{
-    margin-bottom: 10px
-}
-
-.main .card-group .card a:hover{
-    background-color: rgba(255, 255, 255, .1);
-    border: 1px solid rgba(255, 255, 255, .5)
-}
-
-.main .card-group{
-    padding-bottom: 60px
+    line-height: 1.7
 }

@@ -1,0 +1,99 @@
+.main{
+    background-color: #f3f3f3;
+    color:#6a6969;
+}
+
+.main .container>*{
+    border-bottom: 1px solid #dedede;
+}
+
+.main .road{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 13px;
+}
+
+.main .road>*{
+    padding-right: 10px
+}
+
+.main .introduce{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.main .introduce .big-title{
+    font-size: 24px;
+    font-weight: 400;
+    color: #2f2f2f;
+    margin-bottom: 20px
+}
+
+.main .introduce .small-title{
+    font-size: 15px;
+}
+
+.main .card-group .title{
+    text-align: right;
+    padding-top: 30px;
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+
+.main .card-group .title span{
+    padding:3px;
+}
+
+.main .card-group .title span:hover{
+    color: #7a2843
+}
+
+.twenty-three{
+    flex-basis: 23%
+}
+
+.twenty-three>*{
+    padding-bottom: 10px
+}
+
+.twenty-three .word>*{
+    padding-bottom: 5px 
+}
+
+/* .main .card-group .top,
+.main .card-group .bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px
+} */
+
+.main .card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+
+.main .card-group .name{
+    color: #6a6969;
+    font-size: 15px;
+}
+
+.main .card-group .price{
+    color: black
+}
+
+.main .card-group .card a{
+    margin-bottom: 10px
+}
+
+.main .card-group .card a:hover{
+    background-color: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(255, 255, 255, .5)
+}
+
+.main .card-group{
+    padding-bottom: 60px
+}
