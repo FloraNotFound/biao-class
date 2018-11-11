@@ -1,0 +1,31 @@
+<script>
+let n =['a1', 'a2', ['b1', 'b2', ['c1', 'c2', 'c3'], 'b3'], 'a3'];
+let first = '第一级';
+let second = '第二级';
+let third = '第三级';
+
+for(let i=0;i<n.length;i++){
+    if(typeof n[i]==='string'){
+        first+=n[i]+'';
+    }else{
+        for(let s=0;s<n.length;s++){
+            if(typeof n[i][s]==='string'){
+                second+=n[i][s]+'';
+            }
+       
+   else{
+        for(let t =0;t<n.length;t++){
+            if(typeof n[i][s][t]==='string'){
+                third+=n[i][s][t]+'';
+            }
+                }
+            }
+        }
+    }
+}
+
+console.log(first);
+console.log(second);
+console.log(third)
+
+</script>

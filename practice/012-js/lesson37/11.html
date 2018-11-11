@@ -1,0 +1,26 @@
+<script>
+let list = [
+  {
+    name: '王花花',
+    salary: 100,
+  },
+  {
+    name: '李拴蛋',
+    salary: 200,
+  },
+  {
+    name: '牛备备',
+    salary: 300,
+  },
+];
+ let result=[];
+ for(let i=0;i<list.length;i++){
+     if(list[i].salary<=100){
+         continue;
+     }
+     result.push(list[i])
+ }
+
+ console.log(result);
+
+</script>

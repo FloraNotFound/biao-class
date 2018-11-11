@@ -1,0 +1,18 @@
+<script>
+let arr=[
+  {name: '王花花'},
+  {name: '王拴蛋'},
+  {name: '牛备备'},
+]
+
+let n =[];
+
+
+for(let i=0;i<arr.length;i++){
+    if(!arr[i].name.startsWith('王')){
+        continue
+    }
+    n.push(arr[i]);
+}
+console.log(n)
+</script>
