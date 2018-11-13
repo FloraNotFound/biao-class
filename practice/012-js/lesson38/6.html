@@ -1,0 +1,21 @@
+<script>
+let list = [
+  '王花花',
+  '刘备备',
+  '李拴蛋',
+  '赵可爽',
+];
+
+
+function printer(arr,breaker){
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]===breaker){
+            break;
+        }
+        console.log(arr[i])
+    }
+}
+
+
+printer(list, '赵可爽');
+</script>

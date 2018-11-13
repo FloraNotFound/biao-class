@@ -1,0 +1,15 @@
+<script>
+
+ let n=[];   
+function filterOdd(arr){
+    for (let i=0;i<arr.length;i++){
+        if(!(arr[i]%2)){
+            continue;
+        }
+        n.push(arr[i])
+    }
+    return n
+}
+filterOdd([5, 2, 3]);
+console.log(n)
+</script>
