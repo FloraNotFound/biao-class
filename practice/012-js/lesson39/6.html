@@ -1,0 +1,72 @@
+<script>
+function eachStr(arr,fn){
+    for(let i=0;i<arr.length;i++){
+        let it =arr[i];
+        fn(arr[i])
+    }
+}
+
+function exclude(arr,keyword){
+    let result=[];
+    eachStr(arr,(it)=>{
+        if(!it.includes(keyword)){
+            result.push(it)
+        }
+    })
+    return result;
+}
+
+
+
+function search(arr,keyword){
+    let result=[];
+    eachStr(arr,(it)=>{
+        if(it.includes(keyword)){
+            result.push(it)
+        }
+    })
+    return result
+}
+
+function join(arr){
+    let str='';
+    eachStr(arr,(it)=>{
+        str+=it
+    })
+    return str
+}
+
+function shortStr(arr){
+    let result=[];
+    eachStr(arr,(it)=>{
+        if(it.length===1){
+            result.push(it)
+        }
+    })
+    return result
+}
+
+function getYo(arr){
+    let result=[];
+    eachStr(arr,(it)=>{
+        if(it.startsWith('yo')){
+        result.push(it);
+    }
+})
+return result
+}
+
+let start=getYo(['a', 'yo', 'yoo']);
+console.log(start);
+let short = shortStr(['a', 'foo', 'b', 'bar'])
+console.log(short)
+
+let string=join(['Y', 'o', 'o']);
+console.log(string);
+let beibei =search(['背背山', '六六坡', '背背路'], '背背') 
+console.log(beibei)
+let liuliu=exclude(['背背山', '六六坡', '背背路'], '背背') ;
+console.log(liuliu)
+
+
+</script>

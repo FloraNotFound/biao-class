@@ -1,0 +1,79 @@
+<script>
+function eachNumber (arr,fn){
+    for(let i=0;i<arr.length;i++){
+        fn(arr[i])
+    }
+}
+
+function min(arr){
+    let result;
+    eachNumber(arr,(it)=>{
+       if(result===undefined){
+           result=it;
+           return
+       }
+    if(it<result){
+        result=it;
+    }
+    })
+    return result
+}
+
+
+function max(arr){
+    let result;
+    eachNumber (arr,(it)=>{
+        
+        if(result===undefined){
+            result=it
+            return
+        }
+        if(it>result){
+            result=it;
+        }
+    })
+return result;
+}
+
+function sum(arr){
+    let sum=0;
+    eachNumber(arr,(it)=>{
+        sum+=it
+    })
+    return sum;
+}
+
+function evenNumber(arr){
+    let result=[];
+    eachNumber (arr,(it)=>{
+        if(it%2)
+        return
+        result.push(it)
+    })
+return result
+}
+
+function oddNumber(arr){
+    let result=[];
+    eachNumber (arr,function(it){
+        if(!(it%2))
+        return
+        result.push(it)
+
+    })
+    return result;
+}
+
+
+
+let evenlist=evenNumber([1,2,3,4]);
+console.log(evenlist);
+let oddlist=oddNumber([1,2,3,4]);
+console.log(oddlist);
+let total=sum([1,2]);
+console.log(total)
+let big=max([1,2,3,4]);
+console.log(big)
+let small=min([1,2,3,4]);
+console.log(small)
+</script>
