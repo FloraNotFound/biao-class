@@ -1,0 +1,41 @@
+<style>
+:root {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.board {
+  display: inline-block;
+  font-size: 2rem;
+  background: #000;
+  color: red;
+  padding: 10px;
+  line-height: 1;
+  opacity: 1;
+  border: 2px solid;
+}
+</style>
+
+
+
+<div class="board">
+    <span class="inner">修脚 贴膜</span>
+</div>
+
+<script>
+const board = document.querySelector('.board');
+const inner = board.querySelector('.inner');
+
+setInterval(function(){
+    let visible=getComputedStyle(inner).opacity=='1';
+    if(visible){
+        inner.style.opacity=0;
+        board.style.borderColor='transparent';
+    }else{
+        inner.style.opacity=1;
+        board.style.borderColor='inherit'
+    }
+},300)
+
+
+</script>
