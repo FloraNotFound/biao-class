@@ -24,11 +24,10 @@ font-size: 15px;
 const board = document.querySelector('.board');
 const inner = board.querySelector('.inner');
 
-setInterval(function(){
-    let visible=getComputedStyle(inner).opacity=='1';
-    visible ?
-    inner.style.opacity=0:
-    inner.style.opacity=1;
+setInterval(()=>{
+let visible=getComputedStyle(inner).opacity=='1';
+visible?
+inner.style.opacity=0:inner.style.opacity=1;
 },500)
 
 </script>

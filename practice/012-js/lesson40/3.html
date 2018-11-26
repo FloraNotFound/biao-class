@@ -27,25 +27,35 @@
     </div>
 
     <script>
-    const board =document.querySelector('.board');
-    const inner =board.querySelector('.inner');
-    const counter =inner.querySelector('.counter');
-    let c=0
+   // 以整个文档为范围选中.board
+const board = document.querySelector('.board');
+// 以.board为范围选中.inner
+const inner = board.querySelector('.inner');
+// 以.inner为范围选中.counter
+const counter = inner.querySelector('.counter');
 
-    setInterval(function(){
-        let visible =getComputedStyle(inner).opacity=='1';
-        if(visible){
-            inner.style.opacity=0;
-            board.style.boderColor='transparent';
-        }else{
-            inner.style.opacity=1;
-            board.style.borderColor='inherit';
-            c++
-        }
+let count = 0;
 
-        counter.innerText=c+'人用了都说好';
-    },500)
-    
-    
-    
-    </script>
+// 设置间隔
+setInterval(function () {
+  // .inner是否可见
+  let visible = getComputedStyle(inner).opacity == '1';
+
+  // 如果可见
+  if (visible) {
+    // 就隐藏它（让其透明）
+    inner.style.opacity = 0;
+    // 同时隐藏边框（让其透明）
+    board.style.borderColor = 'transparent';
+  } else { // 否则
+    // 显示文字
+    inner.style.opacity = 1;
+    // 显示边框
+    board.style.borderColor = 'inherit';
+    // 只在显示的时候自增
+    count++;
+  }
+
+  // 更新计数
+  counter.innerText = count + '人用了都说好';
+}, 500);
