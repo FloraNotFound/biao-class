@@ -31,23 +31,48 @@ const services = [
 
 let current=0;
 inner.innerText = services[current];
+boot();
 
-setInterval(()=>{
-    let visible=getComputedStyle(inner).opacity=='1';
-    if(visible){
+function boot(){
+    startFlash()
+}
+
+function isvisible(){
+    return getComputedStyle(inner).opacity=='1';
+}
+
+function toggleText(on,off){
+    if(isvisible()){
         inner.style.opacity=0;
-        board.style.borderColor='transparent';
+        off&&off();
     }else{
         inner.style.opacity=1;
-        board.style.borderColor='inherit';
-        current++
-        if(current>=services.length){
-            current=0;
-            
-        }
-        inner.innerText=services[current]
+        on&&on();
     }
+}
+
+function toggleBorder(){
+    if(isvisible()){
+        board.style.borderColor='transparent';
+    }else{
+        board.style.borderColor='inherit';
+    }
+}
+
+function change(){
+        current++;
+        if(current>=services.length)
+        current=0;
+        inner.innerText=services[current]  
+}
+
+function startFlash(){
+    setInterval(()=>{
+        toggleBorder();
+        toggleText(change);
 },500)
+}
+
 
   
   

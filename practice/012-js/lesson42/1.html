@@ -1,0 +1,107 @@
+<style>
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider {
+  position: relative;
+}
+
+.item {
+  position: absolute;
+  display: block;
+  transition: all .5s;
+  opacity: 0;
+}
+
+
+
+
+
+</style>
+
+<div class="container">
+    <div class="slider">
+      <a class="item" href="#">
+        <img src="http://dummyimage.com/1000x500?text=A" alt="A">
+      </a>
+      <a class="item" href="#">
+        <img src="http://dummyimage.com/1000x500?text=B" alt="B">
+      </a>
+      <a class="item" href="#">
+        <img src="http://dummyimage.com/1000x500?text=C" alt="C">
+      </a>
+    </div>
+  </div>
+
+
+<script>
+//选中.Slider
+const parent=document.querySelector('.slider');
+//在.slider中选中所有的.item
+const sliders=parent.querySelectorAll('.item')
+//默认第一张开始
+let current=0;
+//拿到最后一张索引
+let large=sliders.length-1
+
+boot();
+
+function boot(){
+  //显示第一张卡片
+  show(sliders[current]);
+  //间隔一秒显示卡片
+  setInterval(()=>{
+  flip()
+ },1000)
+}
+
+function flip(){
+  //自增当前页
+  current++;
+  //如果自增后超过了数组的长度，就让他回到第一页
+  if(current>=sliders.length)
+  current=0;
+  let prev=getPrev();
+  let next=sliders[current];
+  show(next);
+  hide(prev);
+}
+
+/**
+*获取前一页
+*@return Node
+**/
+function getPrev(){
+  if(current==0){
+    return sliders[large]
+  }else{
+    return sliders[current-1]
+  }
+}
+
+/**
+ * 显示元素
+ * @param {HTMLElement} el
+ */
+function show(el){
+  el.style.opacity=1
+}
+
+/**
+ * 隐藏元素
+ * @param {HTMLElement} el
+ */
+function hide(el){
+  el.style.opacity=0
+}
+
+
+</script>
