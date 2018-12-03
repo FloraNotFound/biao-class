@@ -43,41 +43,24 @@ const sliders=parent.querySelectorAll('.item')
 let current=0;
 let last=sliders.length-1
 
-boot();
-
-function boot(){
-    startFlash()
-}
-
-function startFlash(){
-    setInterval(()=>{
-    current++;
-    if(current>=sliders.length)
-    current=0;
-    let next=sliders[current];
-   
-    let prev=getPrev();
-    show(next);
-    hide(prev);
-    
+setInterval(()=>{
+  current++;
+  if(current>=sliders.length)
+  current=0;
+  let prev=getPrev();
+  let next=sliders[current];
+  if(prev)
+  prev.style.opacity=0;
+  next.style.opacity=1
 },1000)
 
 function getPrev(){
- if(current==0){
-     return sliders[last];
- }else{
+  if(current==0){
+    return sliders[last]
+  }else{
     return sliders[current-1]
- }
-}
-
+  }
 }
 
 
-function show(el){
-    el.style.opacity=1
-}
-
-function hide(el){
-    el.style.opacity=0
-}
 </script>
