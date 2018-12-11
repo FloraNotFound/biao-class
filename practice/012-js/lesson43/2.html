@@ -1,0 +1,131 @@
+<style>
+    img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .slider {
+    position: relative;
+    overflow: hidden;
+    height: 290px;
+  }
+  
+  .item {
+    position: absolute;
+    display: block;
+    transition: all .5s;
+    width: 100%;
+  }
+  
+      </style>
+  
+  
+  
+  <div class="container">
+      <div class="slider">
+        <a class="item" href="#">
+          <img src="http://public.biaoyansu.com/frontend/43/A.png" alt="A">
+        </a>
+        <a class="item" href="#">
+          <img src="http://public.biaoyansu.com/frontend/43/B.png" alt="B">
+        </a>
+        <a class="item" href="#">
+          <img src="http://public.biaoyansu.com/frontend/43/C.png" alt="C">
+        </a>
+      </div>
+  </div>
+  
+
+  <script>
+     const parent = document.querySelector('.slider');
+const slides=parent.querySelectorAll('.item');
+  
+  let currentIndex=0;
+  let lastIndex=slides.length-1;
+  let config={
+    mode:'slide',
+    interval:1000
+  }
+
+  boot({
+    mode:'fade'
+  });
+
+  function boot(custom){
+    config=Object.assign({},config,custom);
+    
+    slide()
+      setInterval(()=>{
+      
+
+          increment();
+          slide()
+
+
+      },1000)
+  }
+
+  function slide(){
+    slidesX();
+          slidesZ();
+  }
+
+  function slidesX(){
+    let prev=getPrev();
+    let current=getCurrent();
+    let next=getNext();
+
+    prev.style.left= -prev.offsetWidth+'px'
+    current.style.left=0
+    next.style.left= next.offsetWidth+'px'
+  }
+
+  function slidesZ(){
+    let prev=getPrev();
+    let current=getCurrent();
+    let next=getNext();
+
+    prev.style.zIndex=1;
+    current.style.zIndex=2;
+    next.style.zIndex=0
+    }
+
+
+  function  increment(){
+      if(currentIndex<lastIndex)
+      currentIndex++;
+  else
+      currentIndex=0;
+      }
+  
+
+  function getPrev(){
+    if (currentIndex > 0) // 图示：[][*][] 或 [][][*]
+    return slides[currentIndex - 1];
+  else // 图示：[*][][]
+    return slides[lastIndex];
+}
+
+   function getCurrent(){
+      return slides[currentIndex]
+}
+
+  function getNext(){
+    if (currentIndex < lastIndex) // 图示：[*][][] 或 [][*][]
+    return slides[currentIndex + 1];
+  // 否则就回归到0
+  else // 图示：[][][*]
+    return slides[0];
+}
+
+  
+  
+  </script>
+
+  

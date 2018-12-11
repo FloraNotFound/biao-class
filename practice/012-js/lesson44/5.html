@@ -1,0 +1,28 @@
+<!-- <p onclick="console.log('yo')">YO</p> --1(使用HTML的on属性绑定)on事件名="函数()"
+<p id="a">YO</p>
+<script>
+a.onclick=function(){
+    console.log('yo')
+}--2使用DOM的on属性绑定
+</script>
+<p id="a">yo</p>
+
+<script>
+a.addEvenListener('click',()=>{
+    console.log('yo')
+})使用addEventListener绑定 -->
+
+
+<!-- </script> -->
+
+<p id="a">Yo</p>
+
+<script>
+  // 点击一次将同时log: "Yo"和"Yo2"
+  a.addEventListener('click', () => {
+    console.log('Yo');
+    console.log('Yo2');
+  });
+
+
+</script>
