@@ -1,0 +1,245 @@
+<style>
+/*插件样式开始*/
+.biao-popup {
+  position: fixed;
+  z-index: 1000;
+  background: #fff;
+  padding: 10px;
+  border: 4px solid;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .1);
+}
+
+.biao-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .6);
+  z-index: 999;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/*插件样式结束*/
+
+
+
+
+</style>
+
+
+<!--用户HTML开始-->
+<button id="trigger">收藏</button>
+<div id="popup">
+  确定要收藏吗？
+  <img src="http://dummyimage.com/200x200">
+</div>
+
+<div>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore maiores nam natus necessitatibus nihil
+  quasi quibusdam sit tempora, vel? Dolores eos est itaque, laborum numquam obcaecati vitae voluptate voluptatibus!
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore maiores nam natus necessitatibus nihil
+  quasi quibusdam sit tempora, vel? Dolores eos est itaque, laborum numquam obcaecati vitae voluptate voluptatibus!
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore maiores nam natus necessitatibus nihil
+  quasi quibusdam sit tempora, vel? Dolores eos est itaque, laborum numquam obcaecati vitae voluptate voluptatibus!
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore maiores nam natus necessitatibus nihil
+  quasi quibusdam sit tempora, vel? Dolores eos est itaque, laborum numquam obcaecati vitae voluptate voluptatibus!
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore maiores nam natus necessitatibus nihil
+  quasi quibusdam sit tempora, vel? Dolores eos est itaque, laborum numquam obcaecati vitae voluptate voluptatibus!
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore maiores nam natus necessitatibus nihil
+  quasi quibusdam sit tempora, vel? Dolores eos est itaque, laborum numquam obcaecati vitae voluptate voluptatibus!
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere inventore maiores nam natus necessitatibus nihil
+  quasi quibusdam sit tempora, vel? Dolores eos est itaque, laborum numquam obcaecati vitae voluptate voluptatibus!
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis debitis dolore ducimus eaque ex id,
+  ipsa itaque modi nisi, odit optio perspiciatis quos recusandae reiciendis tempore vel voluptatem, voluptates.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis debitis dolore ducimus eaque ex id,
+  ipsa itaque modi nisi, odit optio perspiciatis quos recusandae reiciendis tempore vel voluptatem, voluptates.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis debitis dolore ducimus eaque ex id,
+  ipsa itaque modi nisi, odit optio perspiciatis quos recusandae reiciendis tempore vel voluptatem, voluptates.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis debitis dolore ducimus eaque ex id,
+  ipsa itaque modi nisi, odit optio perspiciatis quos recusandae reiciendis tempore vel voluptatem, voluptates.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis debitis dolore ducimus eaque ex id,
+  ipsa itaque modi nisi, odit optio perspiciatis quos recusandae reiciendis tempore vel voluptatem, voluptates.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis debitis dolore ducimus eaque ex id,
+  ipsa itaque modi nisi, odit optio perspiciatis quos recusandae reiciendis tempore vel voluptatem, voluptates.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis debitis dolore ducimus eaque ex id,
+  ipsa itaque modi nisi, odit optio perspiciatis quos recusandae reiciendis tempore vel voluptatem, voluptates.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis debitis dolore ducimus eaque ex id,
+  ipsa itaque modi nisi, odit optio perspiciatis quos recusandae reiciendis tempore vel voluptatem, voluptates.
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur corporis debitis dolore ducimus eaque ex id,
+  ipsa itaque modi nisi, odit optio perspiciatis quos recusandae reiciendis tempore vel voluptatem, voluptates.
+</div>
+<!--用户HTML结束-->
+
+<script>
+// 全文变量，整个js文件都看得见
+let trigger, popup, mask;
+
+// 用户定义JS开始
+boot('#trigger', '#popup');
+
+// 用户定义JS结束
+
+/**
+ * 设置必要的弹出层信息
+ * @param {string} triggerSelector 点谁弹出（选择器）
+ * @param {string} popupSelector 弹出谁（选择器）
+ */
+function boot(triggerSelector, popupSelector) {
+  // 拿到trigger和popup元素对象
+  trigger = document.querySelector(triggerSelector);
+  popup = document.querySelector(popupSelector);
+
+
+  // 准备Popup
+  initPopup();
+
+  // 准备遮罩
+  initMask();
+
+  // 绑定打开相关事件
+  bindOpen();
+
+  // 绑定关闭相关事件
+  bindClose();
+}
+
+
+/**
+ * 绑定打开相关事件
+ *
+ * 如：
+ * 设置Popup的可见性
+ * 定位Popup到合适的位置
+ */
+function bindOpen() {
+  trigger.addEventListener('click', () => {
+    // 显示Popup和遮罩
+    setVisibility(true);
+
+    // 定位Popup到合适的位置
+    repositionPopup('center', 0);
+  });
+}
+
+/**
+ * 绑定关闭相关事件
+ *
+ * 如：
+ * 设置Popup的可见性
+ * 绑定关闭快捷键
+ */
+function bindClose() {
+  // 当遮罩被点击时
+  mask.addEventListener('click', () => {
+    // 隐藏Popup和遮罩
+    setVisibility(false);
+  });
+
+  // 如果按了快捷键"Escape"
+  window.addEventListener('keyup', (e) => {
+    // 就隐藏Popup和遮罩
+    if (e.code === 'Escape')
+      setVisibility(false);
+  });
+}
+
+/**
+ * 设置是否可见
+ * @param {boolean} show true为显示，false为隐藏
+ */
+function setVisibility(show = false) {
+  // 同时显示或隐藏Popup和遮罩
+  popup.hidden = mask.hidden = !show;
+}
+
+/**
+ * 初始化Popup元素
+ */
+function initPopup() {
+  // Popup一开始不应该显示
+  popup.hidden = true;
+  // 添加插件专属类，这样就可以和插件自带的CSS接应配合
+  popup.classList.add('biao-popup');
+}
+
+/**
+ * 初始化遮罩
+ */
+function initMask() {
+  // 造个新元素
+  mask = document.createElement('div');
+  // 加个插件类
+  mask.classList.add('biao-mask');
+  // 默认隐藏
+  mask.hidden = true;
+  // 追加到body最后
+  document.body.appendChild(mask);
+}
+
+/**
+ * 定位Popup
+ *
+ * 由于Popup的初始位置往往很奇怪，
+ * 所以每个Popup在打开时都应该调整位置
+ * @param {string} position 支持的位置有：
+ *    center|top|bottom|left|right|top-left|top-right|bottom-left|bottom-right
+ * @param yOffset 标准定位后的纵向偏移，单位：px
+ * @param xOffset 标准定位后的横向偏移，单位：px
+ */
+function repositionPopup(position = 'center', yOffset = 0, xOffset = 0) {
+  // 获取浏览器窗口的尺寸
+  let windowWidth = window.innerWidth;
+  let windowHeight = window.innerHeight;
+  // 获取元素本身的尺寸
+  let width = popup.offsetWidth;
+  let height = popup.offsetHeight;
+  // 缓存style，方便调用
+  let style = popup.style;
+
+  // 如果位置不是"xxx-xxx"的形式，而仅仅是"xxx"
+  if (!position.includes('-')) {
+    // 如果仅指定横向
+    if (position == 'left' || position == 'right')
+      position += '-centery'; // 纵向就默认居中，变成"xxx-centery"
+    // 如果仅指定纵向
+    else if (position == 'top' || position == 'bottom')
+      position += '-centerx'; // 横向就默认居中，变成"xxx-centerx"
+    else // 否则就全都居中，这其中就包含"center"
+      position = 'centerx-centery';
+  }
+
+  // 是否横向居中
+  if (position.includes('centerx'))
+    style.left = windowWidth / 2 - width / 2 + xOffset + 'px';
+
+  // 是否纵向居中
+  if (position.includes('centery'))
+    style.top = windowHeight / 2 - height / 2 + yOffset + 'px';
+
+  // 是否贴在顶部
+  if (position.includes('top'))
+    style.top = yOffset + 'px';
+
+  // 是否贴在底部
+  if (position.includes('bottom'))
+    style.bottom = yOffset + 'px';
+
+  // 是否贴在左边
+  if (position.includes('left'))
+    style.left = xOffset + 'px';
+
+  // 是否贴在右边
+  if (position.includes('right'))
+    style.right = xOffset + 'px';
+}
+
+
+
+
+</script>
