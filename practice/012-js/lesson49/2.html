@@ -1,0 +1,147 @@
+<button style="margin: 10em;"
+        data-position="right"
+        data-popout="Yo yo yo...">Yo
+</button>
+
+<style>
+button {
+  outline: 0;
+}
+
+button, .popout {
+  border: 2px solid;
+}
+
+.popout {
+  padding: 10px;
+  display: inline-block;
+  position: fixed;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+  background: #fff;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+</style>
+
+<script>
+// 所有点击过的按钮
+let triggers = new Set();
+// 上次点击过的按钮
+let lastTrigger;
+
+boot();
+
+function boot() {
+  bindEvents();
+}
+
+/**
+ * 绑定事件
+ */
+function bindEvents() {
+  document.addEventListener('click', e => {
+    let el = e.target;
+    let content = el.dataset.popout;
+    if (content) {
+      // 如果至少点击过一个按钮（不是第一次点击），
+      // 那么就隐藏上一次点击
+      lastTrigger && hide(lastTrigger);
+
+      // 将本次点击的按钮存为lastTrigger，
+      // 为下次点击做准备
+      lastTrigger = el;
+
+      // 显示对应的Popup
+      show(el, content);
+
+      // 记录到triggers中，方便统一隐藏
+      triggers.add(el);
+    } else
+      hideAll();
+  });
+}
+
+/**
+ * 显示Popout
+ * @param {HTMLButtonElement} button
+ */
+function show(button, content) {
+  // 如果弹出框不存在
+  if (!button.$popout) {
+    // 新建弹出框元素
+    let popout = document.createElement('div');
+    // 为弹出框添加.popout类
+    popout.classList.add('popout');
+    // 设置弹出框内容
+    popout.innerText = content;
+    // 将弹出框对象存在按钮对象上
+    button.$popout = popout;
+    // 将弹出框添加到DOM中
+    document.body.appendChild(popout);
+  } else
+    // 否则直接显示弹出框
+    button.$popout.hidden = false;
+
+  reposition(button);
+}
+
+/**
+ * 隐藏Popout
+ * @param button
+ */
+function hide(button) {
+  button.$popout.hidden = true;
+}
+
+/**
+ * 隐藏全部Popout
+ */
+function hideAll() {
+  triggers.forEach(button => {
+    button.$popout.hidden = true;
+  });
+}
+
+/**
+ * 调整Popout至合适的位置
+ * @param button
+ */
+function reposition(button) {
+  let p = button.$popout;
+  let buttonPosition = button.getBoundingClientRect();
+
+  switch (button.dataset.position) {
+    // 如果放在顶部
+    case 'top':
+      // 左边顶头
+      p.style.left = buttonPosition.left + 'px';
+      // 向上移动一个弹出框（高度）的距离
+      p.style.top = buttonPosition.top - p.offsetHeight - 5 + 'px';
+      break;
+    // 如果放在底部
+    case 'bottom':
+      // 左边顶头
+      p.style.left = buttonPosition.left + 'px';
+      // 向下移动一个按钮（高度）的距离
+      p.style.top = buttonPosition.top + button.offsetHeight + 5 + 'px';
+      break;
+    // 如果放在底部
+    case 'left':
+      // 向左移动一个弹出框（宽度）的距离
+      p.style.left = buttonPosition.left - p.offsetWidth - 5 + 'px';
+      p.style.top = buttonPosition.top + 'px';
+      break;
+    case 'right':
+      // 向右移动一个按钮（宽度）的距离
+      p.style.left = buttonPosition.left + button.offsetWidth + 5 + 'px';
+      p.style.top = buttonPosition.top + 'px';
+      break;
+  }
+}
+
+
+
+</script>
