@@ -1,0 +1,92 @@
+<h1>背背山中学花名册</h1>
+<table>
+  <thead>
+  <th>姓名</th>
+  <th>性别</th>
+  <th>分数</th>
+  <th>操作</th>
+  </thead>
+  <tbody id="tbody">
+  </tbody>
+</table>
+
+<style>
+:root{
+  font-family: sans-serif;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,th{
+  text-align: left;
+  border: 1px solid;
+  padding: .5em;
+}
+</style>
+
+<script>
+// 用于追加数据的根元素
+let tbody = document.getElementById('tbody');
+// 用于渲染的数据
+let users = [
+  {
+    name: '王花花',
+    gender: '男',
+    score: 60,
+  },
+  {
+    name: '李拴蛋',
+    gender: '女',
+    score: 65,
+  },
+  {
+    name: '赵可爽',
+    gender: '男',
+    score: 80,
+  },
+];
+
+boot();
+
+function boot() {
+  render();
+}
+
+/**
+ * 通过数据生成内容
+ */
+function render() {
+  // 清空上次渲染的内容
+  tbody.innerHTML = '';
+
+  // 循环每条数据
+  users.forEach((user, i) => {
+    // 为每条数据创建元素
+    let tr = document.createElement('tr');
+
+    // 设置元素内容
+    tr.innerHTML = `
+  <td>${user.name}</td>
+  <td>${user.gender}</td>
+  <td>${user.score}</td>
+  <td><button class="del">删除</button></td>
+  `;
+
+    // 选中每个tr中的按钮
+    let delButton = tr.querySelector('.del');
+    tbody.appendChild(tr);
+
+    // 当按钮点击时
+    delButton.addEventListener('click', () => {
+      // 删除对应数据
+      users.splice(i, 1);
+      // 删除对应tr元素
+      tr.remove();
+    });
+  });
+}
+
+</script>
